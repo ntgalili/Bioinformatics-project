@@ -12,7 +12,7 @@ namespace DS
 
 
 
-        static List<Pentamer> ListOfPentamers;
+        public static List<Pentamer> ListOfPentamers;
 
 
 
