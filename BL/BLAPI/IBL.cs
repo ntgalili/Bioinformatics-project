@@ -14,6 +14,7 @@ namespace BLAPI
 
         #region Pentamer
         BO.UniquenessTest search(BO.Pentamer pnta);
+        //IEnumerable<BO.Pentamer> cutting(string str);
         #endregion
 
 

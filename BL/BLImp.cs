@@ -40,6 +40,19 @@ namespace BL
                 return UniquenessTest.SemiUnique;
             return UniquenessTest.NotUnique;
         }
+        //public IEnumerable<BO.Pentamer> Cut(Protein protein)
+        //{
+        //    IEnumerable<BO.UniquenessTest> result = new List <BO.UniquenessTest>();
+        //    Pentamer pnta;
+        //    for (int i = 0; i < protein.Sequence.Length - 4; i++)
+        //    {
+        //        pnta = new Pentamer();
+        //        pnta.Sequence = protein.Sequence.Substring(i, 5);
+        //        pnta.ProteinGI = protein.ProteinGI;
+
+        //    }
+        //}
+
         #endregion
 
     }
