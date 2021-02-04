@@ -18,6 +18,11 @@ namespace BLAPI
         #endregion
 
 
+        #region Protein
+        BO.Protein GetProteinBySequence(string str);
+        BO.Protein GetProteinByName(string name);
+        BO.Protein GetProteinByGI(int numOfGI);
+        #endregion
 
     }
 }

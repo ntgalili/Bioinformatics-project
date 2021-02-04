@@ -23,12 +23,18 @@ namespace BL
         IDL dl = DLFactory.GetDL();
 
         #region Pentamer
+        BO.Pentamer PentamerDoBoAdapter(DO.Pentamer DOPentamer)
+        {
+            BO.Pentamer BOPentamer = new BO.Pentamer();
+            DOPentamer.CopyPropertiesTo(BOPentamer);
+            return BOPentamer;
+        }
         public UniquenessTest search(BO.Pentamer pntaBO)
         {
             int count = 0;
             DO.Pentamer pntaDO = new DO.Pentamer();
             pntaBO.CopyPropertiesTo(pntaDO);
-            IEnumerable<DO.Pentamer> pentamerList = dl.search(pntaDO);
+            IEnumerable<DO.Pentamer> pentamerList = dl.Search(pntaDO);
             foreach (DO.Pentamer pntDO in pentamerList)
             {
                 if (pntDO.ProteinGI != pntaBO.ProteinGI)
@@ -53,6 +59,29 @@ namespace BL
         //    }
         //}
 
+        #endregion
+
+
+
+        #region Protein
+        BO.Protein proteinDoBoAdapter(DO.Protein DOProtein)
+        {
+            BO.Protein BOProtein = new BO.Protein();
+            DOProtein.CopyPropertiesTo(BOProtein);
+            return BOProtein;
+        }
+        public BO.Protein GetProteinBySequence(string str)
+        {
+            return proteinDoBoAdapter(dl.GetProteinBySequence(str));
+        }
+        public BO.Protein GetProteinByName(string name)
+        {
+            return proteinDoBoAdapter(dl.GetProteinByName(name));
+        }
+        public BO.Protein GetProteinByGI(int numOfGI)
+        {
+            return proteinDoBoAdapter(dl.GetProteinByGI(numOfGI));
+        }
         #endregion
 
     }
