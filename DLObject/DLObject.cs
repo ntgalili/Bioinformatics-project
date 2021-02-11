@@ -22,11 +22,27 @@ namespace DL
         #endregion
 
         #region Pentamer
-        public IEnumerable<DO.Pentamer> search(DO.Pentamer pntaDO)
+        public IEnumerable<DO.Pentamer> Search(DO.Pentamer pntaDO)
         {
             return from P in DataSource.ListOfPentamers
                    where P.Sequence == pntaDO.Sequence
                    select P;
+        }
+        #endregion
+
+
+        #region Protein
+        public DO.Protein GetProteinBySequence(string str)
+        {
+            return (DataSource.ListOfProteins.FirstOrDefault(p => p.Sequence == str)).Clone();
+        }
+        public DO.Protein GetProteinByName(string name)
+        {
+            return (DataSource.ListOfProteins.FirstOrDefault(p => p.ProteinName == name)).Clone();
+        }
+        public DO.Protein GetProteinByGI(int numOfGI)
+        {
+            return (DataSource.ListOfProteins.FirstOrDefault(p => p.ProteinGI == numOfGI)).Clone();
         }
         #endregion
     }

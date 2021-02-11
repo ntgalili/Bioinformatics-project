@@ -45,6 +45,7 @@
     <Compile Include="DLFactory.cs" />
     <Compile Include="DO\Exceptions.cs" />
     <Compile Include="DO\Pentamer.cs" />
+    <Compile Include="DO\Protein.cs" />
     <Compile Include="IDL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DO\Enums.cs" />

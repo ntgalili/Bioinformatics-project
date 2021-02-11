@@ -20,8 +20,15 @@ namespace DLAPI
         // Update - update properties of an instance
         // Delete - delete an instance
             #region Pentamer
-            IEnumerable<DO.Pentamer> search(DO.Pentamer pntaDO);
-            #endregion
+            IEnumerable<DO.Pentamer> Search(DO.Pentamer pntaDO);
+        #endregion
+
+
+        #region Protein
+        DO.Protein GetProteinBySequence(string str);
+        DO.Protein GetProteinByName(string name);
+        DO.Protein GetProteinByGI(int numOfGI);
+        #endregion
 
 
         //    #region Person
@@ -61,7 +68,7 @@ namespace DLAPI
 
         //#region Lecturer
         //IEnumerable<DO.LecturerInCourse> GetLecturersInCourseList(Predicate<DO.LecturerInCourse> predicate);
-        
+
         //#endregion
 
     }

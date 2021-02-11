@@ -14,9 +14,15 @@ namespace BLAPI
 
         #region Pentamer
         BO.UniquenessTest search(BO.Pentamer pnta);
+        //IEnumerable<BO.Pentamer> cutting(string str);
         #endregion
 
 
+        #region Protein
+        BO.Protein GetProteinBySequence(string str);
+        BO.Protein GetProteinByName(string name);
+        BO.Protein GetProteinByGI(int numOfGI);
+        #endregion
 
     }
 }

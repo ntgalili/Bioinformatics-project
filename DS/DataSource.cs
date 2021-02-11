@@ -13,7 +13,7 @@ namespace DS
 
 
         public static List<Pentamer> ListOfPentamers;
-
+        public static List<Protein> ListOfProteins;
 
 
 
