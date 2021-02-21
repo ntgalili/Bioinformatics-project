@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="DLConfig.cs" />
     <Compile Include="DLFactory.cs" />
+    <Compile Include="DO\VirtualSequence.cs" />
     <Compile Include="DO\Exceptions.cs" />
     <Compile Include="DO\Pentamer.cs" />
     <Compile Include="DO\Protein.cs" />
