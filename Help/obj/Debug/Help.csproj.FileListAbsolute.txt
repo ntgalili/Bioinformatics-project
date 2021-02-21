@@ -4,3 +4,10 @@ C:\Users\הדסי\source\repos\Bioinformatics-project\Help\bin\Debug\Help.pdb
 C:\Users\הדסי\source\repos\Bioinformatics-project\Help\obj\Debug\Help.csproj.CoreCompileInputs.cache
 C:\Users\הדסי\source\repos\Bioinformatics-project\Help\obj\Debug\Help.exe
 C:\Users\הדסי\source\repos\Bioinformatics-project\Help\obj\Debug\Help.pdb
+C:\Users\הדסי\source\repos\Bioinformatics-project\Help\obj\Debug\Help.csprojAssemblyReference.cache
+C:\Users\user\source\repos\Bioinformatics-project\Help\bin\Debug\Help.exe.config
+C:\Users\user\source\repos\Bioinformatics-project\Help\bin\Debug\Help.exe
+C:\Users\user\source\repos\Bioinformatics-project\Help\bin\Debug\Help.pdb
+C:\Users\user\source\repos\Bioinformatics-project\Help\obj\Debug\Help.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Bioinformatics-project\Help\obj\Debug\Help.exe
+C:\Users\user\source\repos\Bioinformatics-project\Help\obj\Debug\Help.pdb

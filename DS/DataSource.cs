@@ -11,10 +11,12 @@ namespace DS
     {
 
 
-
+        /// <summary>
+        /// 
+        /// </summary>
         public static List<Pentamer> ListOfPentamers;
         public static List<Protein> ListOfProteins;
-
+        public static List<VirtualSequence> ListOfVS;
 
 
 
@@ -2790,7 +2792,1405 @@ namespace DS
 
 
             };
-        }
+
+            ListOfVS = new List<VirtualSequence>
+            {
+                            new VirtualSequence
+            {
+              Sequence ="MKGLY",
+            },
+            new VirtualSequence
+            {
+              Sequence ="KGLYF",
+            },
+            new VirtualSequence
+            {
+              Sequence ="GLYFQ",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LYFQQ",
+            },
+            new VirtualSequence
+            {
+              Sequence ="YFQQS",
+            },
+            new VirtualSequence
+            {
+              Sequence ="FQQSS",
+            },
+            new VirtualSequence
+            {
+              Sequence ="QQSST",
+            },
+            new VirtualSequence
+            {
+              Sequence ="QSSTD",
+            },
+            new VirtualSequence
+            {
+              Sequence ="SSTDE",
+            },
+            new VirtualSequence
+            {
+              Sequence ="STDEE",
+            },
+            new VirtualSequence
+            {
+              Sequence ="TDEEI",
+            },
+            new VirtualSequence
+            {
+              Sequence ="DEEIT",
+            },
+            new VirtualSequence
+            {
+              Sequence ="EEITF",
+            },
+            new VirtualSequence
+            {
+              Sequence ="EITFV",
+            },
+            new VirtualSequence
+            {
+              Sequence ="ITFVF",
+            },
+            new VirtualSequence
+            {
+              Sequence ="TFVFQ",
+            },
+            new VirtualSequence
+            {
+              Sequence ="FVFQE",
+            },
+            new VirtualSequence
+            {
+              Sequence ="VFQEK",
+            },
+            new VirtualSequence
+            {
+              Sequence ="FQEKE",
+            },
+            new VirtualSequence
+            {
+              Sequence ="QEKED",
+            },
+            new VirtualSequence
+            {
+              Sequence ="EKEDL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="KEDLP",
+            },
+            new VirtualSequence
+            {
+              Sequence ="EDLPV",
+            },
+            new VirtualSequence
+            {
+              Sequence ="DLPVT",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LPVTE",
+            },
+            new VirtualSequence
+            {
+              Sequence ="PVTED",
+            },
+            new VirtualSequence
+            {
+              Sequence ="VTEDN",
+            },
+            new VirtualSequence
+            {
+              Sequence ="TEDNF",
+            },
+            new VirtualSequence
+            {
+              Sequence ="EDNFV",
+            },
+            new VirtualSequence
+            {
+              Sequence ="DNFVK",
+            },
+            new VirtualSequence
+            {
+              Sequence ="NFVKL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="FVKLQ",
+            },
+            new VirtualSequence
+            {
+              Sequence ="VKLQV",
+            },
+            new VirtualSequence
+            {
+              Sequence ="KLQVK",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LQVKA",
+            },
+            new VirtualSequence
+            {
+              Sequence ="QVKAC",
+            },
+            new VirtualSequence
+            {
+              Sequence ="VKACA",
+            },
+            new VirtualSequence
+            {
+              Sequence ="KACAL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="ACALS",
+            },
+            new VirtualSequence
+            {
+              Sequence ="CALSQ",
+            },
+            new VirtualSequence
+            {
+              Sequence ="ALSQI",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LSQIN",
+            },
+            new VirtualSequence
+            {
+              Sequence ="SQINT",
+            },
+            new VirtualSequence
+            {
+              Sequence ="QINTK",
+            },
+            new VirtualSequence
+            {
+              Sequence ="INTKL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="NTKLL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="TKLLA",
+            },
+            new VirtualSequence
+            {
+              Sequence ="KLLAE",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LLAEM",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LAEMK",
+            },
+            new VirtualSequence
+            {
+              Sequence ="AEMKM",
+            },
+            new VirtualSequence
+            {
+              Sequence ="EMKMK",
+            },
+            new VirtualSequence
+            {
+              Sequence ="MKMKK",
+            },
+            new VirtualSequence
+            {
+              Sequence ="KMKKD",
+            },
+            new VirtualSequence
+            {
+              Sequence ="MKKDL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="KKDLF",
+            },
+            new VirtualSequence
+            {
+              Sequence ="KDLFP",
+            },
+            new VirtualSequence
+            {
+              Sequence ="DLFPV",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LFPVG",
+            },
+            new VirtualSequence
+            {
+              Sequence ="FPVGR",
+            },
+            new VirtualSequence
+            {
+              Sequence ="PVGRE",
+            },
+            new VirtualSequence
+            {
+              Sequence ="VGREI",
+            },
+            new VirtualSequence
+            {
+              Sequence ="GREIA",
+            },
+            new VirtualSequence
+            {
+              Sequence ="REIAG",
+            },
+            new VirtualSequence
+            {
+              Sequence ="EIAGI",
+            },
+            new VirtualSequence
+            {
+              Sequence ="IAGIV",
+            },
+            new VirtualSequence
+            {
+              Sequence ="AGIVL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="GIVLD",
+            },
+            new VirtualSequence
+            {
+              Sequence ="IVLDV",
+            },
+            new VirtualSequence
+            {
+              Sequence ="VLDVG",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LDVGS",
+            },
+            new VirtualSequence
+            {
+              Sequence ="DVGSK",
+            },
+            new VirtualSequence
+            {
+              Sequence ="VGSKV",
+            },
+            new VirtualSequence
+            {
+              Sequence ="GSKVS",
+            },
+            new VirtualSequence
+            {
+              Sequence ="SKVSF",
+            },
+            new VirtualSequence
+            {
+              Sequence ="KVSFF",
+            },
+            new VirtualSequence
+            {
+              Sequence ="VSFFQ",
+            },
+            new VirtualSequence
+            {
+              Sequence ="SFFQP",
+            },
+            new VirtualSequence
+            {
+              Sequence ="FFQPD",
+            },
+            new VirtualSequence
+            {
+              Sequence ="FQPDD",
+            },
+            new VirtualSequence
+            {
+              Sequence ="QPDDE",
+            },
+            new VirtualSequence
+            {
+              Sequence ="PDDEV",
+            },
+            new VirtualSequence
+            {
+              Sequence ="DDEVV",
+            },
+            new VirtualSequence
+            {
+              Sequence ="DEVVG",
+            },
+            new VirtualSequence
+            {
+              Sequence ="EVVGI",
+            },
+            new VirtualSequence
+            {
+              Sequence ="VVGIL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="VGILP",
+            },
+            new VirtualSequence
+            {
+              Sequence ="GILPL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="ILPLD",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LPLDS",
+            },
+            new VirtualSequence
+            {
+              Sequence ="PLDSE",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LDSED",
+            },
+            new VirtualSequence
+            {
+              Sequence ="DSEDP",
+            },
+            new VirtualSequence
+            {
+              Sequence ="SEDPG",
+            },
+            new VirtualSequence
+            {
+              Sequence ="EDPGL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="DPGLC",
+            },
+            new VirtualSequence
+            {
+              Sequence ="PGLCE",
+            },
+            new VirtualSequence
+            {
+              Sequence ="GLCEV",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LCEVV",
+            },
+            new VirtualSequence
+            {
+              Sequence ="CEVVR",
+            },
+            new VirtualSequence
+            {
+              Sequence ="EVVRV",
+            },
+            new VirtualSequence
+            {
+              Sequence ="VVRVH",
+            },
+            new VirtualSequence
+            {
+              Sequence ="VRVHE",
+            },
+            new VirtualSequence
+            {
+              Sequence ="RVHEH",
+            },
+            new VirtualSequence
+            {
+              Sequence ="VHEHY",
+            },
+            new VirtualSequence
+            {
+              Sequence ="HEHYL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="EHYLV",
+            },
+            new VirtualSequence
+            {
+              Sequence ="HYLVH",
+            },
+            new VirtualSequence
+            {
+              Sequence ="YLVHK",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LVHKP",
+            },
+            new VirtualSequence
+            {
+              Sequence ="VHKPE",
+            },
+            new VirtualSequence
+            {
+              Sequence ="HKPEK",
+            },
+            new VirtualSequence
+            {
+              Sequence ="KPEKV",
+            },
+            new VirtualSequence
+            {
+              Sequence ="PEKVT",
+            },
+            new VirtualSequence
+            {
+              Sequence ="EKVTW",
+            },
+            new VirtualSequence
+            {
+              Sequence ="KVTWT",
+            },
+            new VirtualSequence
+            {
+              Sequence ="VTWTE",
+            },
+            new VirtualSequence
+            {
+              Sequence ="TWTEA",
+            },
+            new VirtualSequence
+            {
+              Sequence ="WTEAA",
+            },
+            new VirtualSequence
+            {
+              Sequence ="TEAAG",
+            },
+            new VirtualSequence
+            {
+              Sequence ="EAAGS",
+            },
+            new VirtualSequence
+            {
+              Sequence ="AAGSI",
+            },
+            new VirtualSequence
+            {
+              Sequence ="AGSIR",
+            },
+            new VirtualSequence
+            {
+              Sequence ="GSIRD",
+            },
+            new VirtualSequence
+            {
+              Sequence ="SIRDG",
+            },
+            new VirtualSequence
+            {
+              Sequence ="IRDGV",
+            },
+            new VirtualSequence
+            {
+              Sequence ="RDGVR",
+            },
+            new VirtualSequence
+            {
+              Sequence ="DGVRA",
+            },
+            new VirtualSequence
+            {
+              Sequence ="GVRAY",
+            },
+            new VirtualSequence
+            {
+              Sequence ="VRAYT",
+            },
+            new VirtualSequence
+            {
+              Sequence ="RAYTA",
+            },
+            new VirtualSequence
+            {
+              Sequence ="AYTAL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="YTALH",
+            },
+            new VirtualSequence
+            {
+              Sequence ="TALHY",
+            },
+            new VirtualSequence
+            {
+              Sequence ="ALHYL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LHYLS",
+            },
+            new VirtualSequence
+            {
+              Sequence ="HYLSH",
+            },
+            new VirtualSequence
+            {
+              Sequence ="YLSHL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LSHLS",
+            },
+            new VirtualSequence
+            {
+              Sequence ="SHLSP",
+            },
+            new VirtualSequence
+            {
+              Sequence ="HLSPG",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LSPGK",
+            },
+            new VirtualSequence
+            {
+              Sequence ="SPGKS",
+            },
+            new VirtualSequence
+            {
+              Sequence ="PGKSV",
+            },
+            new VirtualSequence
+            {
+              Sequence ="GKSVL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="KSVLI",
+            },
+            new VirtualSequence
+            {
+              Sequence ="SVLIM",
+            },
+            new VirtualSequence
+            {
+              Sequence ="VLIMD",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LIMDG",
+            },
+            new VirtualSequence
+            {
+              Sequence ="IMDGA",
+            },
+            new VirtualSequence
+            {
+              Sequence ="MDGAS",
+            },
+            new VirtualSequence
+            {
+              Sequence ="DGASA",
+            },
+            new VirtualSequence
+            {
+              Sequence ="GASAF",
+            },
+            new VirtualSequence
+            {
+              Sequence ="ASAFG",
+            },
+            new VirtualSequence
+            {
+              Sequence ="SAFGT",
+            },
+            new VirtualSequence
+            {
+              Sequence ="AFGTI",
+            },
+            new VirtualSequence
+            {
+              Sequence ="FGTIA",
+            },
+            new VirtualSequence
+            {
+              Sequence ="GTIAI",
+            },
+            new VirtualSequence
+            {
+              Sequence ="TIAIQ",
+            },
+            new VirtualSequence
+            {
+              Sequence ="IAIQL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="AIQLA",
+            },
+            new VirtualSequence
+            {
+              Sequence ="IQLAH",
+            },
+            new VirtualSequence
+            {
+              Sequence ="QLAHH",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LAHHR",
+            },
+            new VirtualSequence
+            {
+              Sequence ="AHHRG",
+            },
+            new VirtualSequence
+            {
+              Sequence ="HHRGA",
+            },
+            new VirtualSequence
+            {
+              Sequence ="HRGAK",
+            },
+            new VirtualSequence
+            {
+              Sequence ="RGAKV",
+            },
+            new VirtualSequence
+            {
+              Sequence ="GAKVI",
+            },
+            new VirtualSequence
+            {
+              Sequence ="AKVIS",
+            },
+            new VirtualSequence
+            {
+              Sequence ="KVIST",
+            },
+            new VirtualSequence
+            {
+              Sequence ="VISTA",
+            },
+            new VirtualSequence
+            {
+              Sequence ="ISTAC",
+            },
+            new VirtualSequence
+            {
+              Sequence ="STACS",
+            },
+            new VirtualSequence
+            {
+              Sequence ="TACSL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="ACSLE",
+            },
+            new VirtualSequence
+            {
+              Sequence ="CSLED",
+            },
+            new VirtualSequence
+            {
+              Sequence ="SLEDK",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LEDKQ",
+            },
+            new VirtualSequence
+            {
+              Sequence ="EDKQC",
+            },
+            new VirtualSequence
+            {
+              Sequence ="DKQCL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="KQCLE",
+            },
+            new VirtualSequence
+            {
+              Sequence ="QCLER",
+            },
+            new VirtualSequence
+            {
+              Sequence ="CLERF",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LERFR",
+            },
+            new VirtualSequence
+            {
+              Sequence ="ERFRP",
+            },
+            new VirtualSequence
+            {
+              Sequence ="RFRPP",
+            },
+            new VirtualSequence
+            {
+              Sequence ="FRPPI",
+            },
+            new VirtualSequence
+            {
+              Sequence ="RPPIA",
+            },
+            new VirtualSequence
+            {
+              Sequence ="PPIAR",
+            },
+            new VirtualSequence
+            {
+              Sequence ="PIARV",
+            },
+            new VirtualSequence
+            {
+              Sequence ="IARVI",
+            },
+            new VirtualSequence
+            {
+              Sequence ="ARVID",
+            },
+            new VirtualSequence
+            {
+              Sequence ="RVIDV",
+            },
+            new VirtualSequence
+            {
+              Sequence ="VIDVS",
+            },
+            new VirtualSequence
+            {
+              Sequence ="IDVSN",
+            },
+            new VirtualSequence
+            {
+              Sequence ="DVSNG",
+            },
+            new VirtualSequence
+            {
+              Sequence ="VSNGK",
+            },
+            new VirtualSequence
+            {
+              Sequence ="SNGKV",
+            },
+            new VirtualSequence
+            {
+              Sequence ="NGKVH",
+            },
+            new VirtualSequence
+            {
+              Sequence ="GKVHV",
+            },
+            new VirtualSequence
+            {
+              Sequence ="KVHVA",
+            },
+            new VirtualSequence
+            {
+              Sequence ="VHVAE",
+            },
+            new VirtualSequence
+            {
+              Sequence ="HVAES",
+            },
+            new VirtualSequence
+            {
+              Sequence ="VAESC",
+            },
+            new VirtualSequence
+            {
+              Sequence ="AESCL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="ESCLE",
+            },
+            new VirtualSequence
+            {
+              Sequence ="SCLEE",
+            },
+            new VirtualSequence
+            {
+              Sequence ="CLEET",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LEETG",
+            },
+            new VirtualSequence
+            {
+              Sequence ="EETGG",
+            },
+            new VirtualSequence
+            {
+              Sequence ="ETGGL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="TGGLG",
+            },
+            new VirtualSequence
+            {
+              Sequence ="GGLGV",
+            },
+            new VirtualSequence
+            {
+              Sequence ="GLGVD",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LGVDI",
+            },
+            new VirtualSequence
+            {
+              Sequence ="GVDIV",
+            },
+            new VirtualSequence
+            {
+              Sequence ="VDIVL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="DIVLD",
+            },
+            new VirtualSequence
+            {
+              Sequence ="IVLDA",
+            },
+            new VirtualSequence
+            {
+              Sequence ="VLDAG",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LDAGV",
+            },
+            new VirtualSequence
+            {
+              Sequence ="DAGVR",
+            },
+            new VirtualSequence
+            {
+              Sequence ="AGVRL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="GVRLY",
+            },
+            new VirtualSequence
+            {
+              Sequence ="VRLYS",
+            },
+            new VirtualSequence
+            {
+              Sequence ="RLYSK",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LYSKD",
+            },
+            new VirtualSequence
+            {
+              Sequence ="YSKDD",
+            },
+            new VirtualSequence
+            {
+              Sequence ="SKDDE",
+            },
+            new VirtualSequence
+            {
+              Sequence ="KDDEP",
+            },
+            new VirtualSequence
+            {
+              Sequence ="DDEPA",
+            },
+            new VirtualSequence
+            {
+              Sequence ="DEPAV",
+            },
+            new VirtualSequence
+            {
+              Sequence ="EPAVK",
+            },
+            new VirtualSequence
+            {
+              Sequence ="PAVKL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="AVKLQ",
+            },
+            new VirtualSequence
+            {
+              Sequence ="VKLQL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="KLQLL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LQLLP",
+            },
+            new VirtualSequence
+            {
+              Sequence ="QLLPH",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LLPHK",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LPHKH",
+            },
+            new VirtualSequence
+            {
+              Sequence ="PHKHD",
+            },
+            new VirtualSequence
+            {
+              Sequence ="HKHDI",
+            },
+            new VirtualSequence
+            {
+              Sequence ="KHDII",
+            },
+            new VirtualSequence
+            {
+              Sequence ="HDIIT",
+            },
+            new VirtualSequence
+            {
+              Sequence ="DIITL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="IITLL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="ITLLG",
+            },
+            new VirtualSequence
+            {
+              Sequence ="TLLGV",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LLGVG",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LGVGG",
+            },
+            new VirtualSequence
+            {
+              Sequence ="GVGGH",
+            },
+            new VirtualSequence
+            {
+              Sequence ="VGGHW",
+            },
+            new VirtualSequence
+            {
+              Sequence ="GGHWV",
+            },
+            new VirtualSequence
+            {
+              Sequence ="GHWVT",
+            },
+            new VirtualSequence
+            {
+              Sequence ="HWVTT",
+            },
+            new VirtualSequence
+            {
+              Sequence ="WVTTE",
+            },
+            new VirtualSequence
+            {
+              Sequence ="VTTEE",
+            },
+            new VirtualSequence
+            {
+              Sequence ="TTEEN",
+            },
+            new VirtualSequence
+            {
+              Sequence ="TEENL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="EENLQ",
+            },
+            new VirtualSequence
+            {
+              Sequence ="ENLQL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="NLQLD",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LQLDP",
+            },
+            new VirtualSequence
+            {
+              Sequence ="QLDPP",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LDPPD",
+            },
+            new VirtualSequence
+            {
+              Sequence ="DPPDS",
+            },
+            new VirtualSequence
+            {
+              Sequence ="PPDSH",
+            },
+            new VirtualSequence
+            {
+              Sequence ="PDSHC",
+            },
+            new VirtualSequence
+            {
+              Sequence ="DSHCL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="SHCLF",
+            },
+            new VirtualSequence
+            {
+              Sequence ="HCLFL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="CLFLK",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LFLKG",
+            },
+            new VirtualSequence
+            {
+              Sequence ="FLKGA",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LKGAT",
+            },
+            new VirtualSequence
+            {
+              Sequence ="KGATL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="GATLA",
+            },
+            new VirtualSequence
+            {
+              Sequence ="ATLAF",
+            },
+            new VirtualSequence
+            {
+              Sequence ="TLAFL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LAFLN",
+            },
+            new VirtualSequence
+            {
+              Sequence ="AFLND",
+            },
+            new VirtualSequence
+            {
+              Sequence ="FLNDE",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LNDEV",
+            },
+            new VirtualSequence
+            {
+              Sequence ="NDEVW",
+            },
+            new VirtualSequence
+            {
+              Sequence ="DEVWN",
+            },
+            new VirtualSequence
+            {
+              Sequence ="EVWNL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="VWNLS",
+            },
+            new VirtualSequence
+            {
+              Sequence ="WNLSN",
+            },
+            new VirtualSequence
+            {
+              Sequence ="NLSNV",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LSNVQ",
+            },
+            new VirtualSequence
+            {
+              Sequence ="SNVQQ",
+            },
+            new VirtualSequence
+            {
+              Sequence ="NVQQG",
+            },
+            new VirtualSequence
+            {
+              Sequence ="VQQGK",
+            },
+            new VirtualSequence
+            {
+              Sequence ="QQGKY",
+            },
+            new VirtualSequence
+            {
+              Sequence ="QGKYL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="GKYLC",
+            },
+            new VirtualSequence
+            {
+              Sequence ="KYLCI",
+            },
+            new VirtualSequence
+            {
+              Sequence ="YLCIL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LCILK",
+            },
+            new VirtualSequence
+            {
+              Sequence ="CILKD",
+            },
+            new VirtualSequence
+            {
+              Sequence ="ILKDV",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LKDVM",
+            },
+            new VirtualSequence
+            {
+              Sequence ="KDVME",
+            },
+            new VirtualSequence
+            {
+              Sequence ="DVMEK",
+            },
+            new VirtualSequence
+            {
+              Sequence ="VMEKL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="MEKLS",
+            },
+            new VirtualSequence
+            {
+              Sequence ="EKLST",
+            },
+            new VirtualSequence
+            {
+              Sequence ="KLSTG",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LSTGV",
+            },
+            new VirtualSequence
+            {
+              Sequence ="STGVF",
+            },
+            new VirtualSequence
+            {
+              Sequence ="TGVFR",
+            },
+            new VirtualSequence
+            {
+              Sequence ="GVFRP",
+            },
+            new VirtualSequence
+            {
+              Sequence ="VFRPQ",
+            },
+            new VirtualSequence
+            {
+              Sequence ="FRPQL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="RPQLD",
+            },
+            new VirtualSequence
+            {
+              Sequence ="PQLDE",
+            },
+            new VirtualSequence
+            {
+              Sequence ="QLDEP",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LDEPI",
+            },
+            new VirtualSequence
+            {
+              Sequence ="DEPIP",
+            },
+            new VirtualSequence
+            {
+              Sequence ="EPIPL",
+            },
+            new VirtualSequence
+            {
+              Sequence ="PIPLY",
+            },
+            new VirtualSequence
+            {
+              Sequence ="IPLYE",
+            },
+            new VirtualSequence
+            {
+              Sequence ="PLYEA",
+            },
+            new VirtualSequence
+            {
+              Sequence ="LYEAK",
+            },
+            new VirtualSequence
+            {
+              Sequence ="YEAKV",
+            },
+            new VirtualSequence
+            {
+              Sequence ="EAKVS",
+            },
+            new VirtualSequence
+            {
+              Sequence ="AKVSM",
+            },
+            new VirtualSequence
+            {
+              Sequence ="KVSME",
+            },
+            new VirtualSequence
+            {
+              Sequence ="VSMEA",
+            },
+            new VirtualSequence
+            {
+              Sequence ="SMEAV",
+            },
+            new VirtualSequence
+            {
+              Sequence ="MEAVQ",
+            },
+            new VirtualSequence
+            {
+              Sequence ="EAVQK",
+            },
+            new VirtualSequence
+            {
+              Sequence ="AVQKN",
+            },
+            new VirtualSequence
+            {
+              Sequence ="VQKNQ",
+            },
+            new VirtualSequence
+            {
+              Sequence ="QKNQG",
+            },
+            new VirtualSequence
+            {
+              Sequence ="KNQGR",
+            },
+            new VirtualSequence
+            {
+              Sequence ="NQGRK",
+            },
+            new VirtualSequence
+            {
+              Sequence ="QGRKK",
+            },
+            new VirtualSequence
+            {
+              Sequence ="GRKKQ",
+            },
+            new VirtualSequence
+            {
+              Sequence ="RKKQV",
+            },
+            new VirtualSequence
+            {
+              Sequence ="KKQVV",
+            },
+            new VirtualSequence
+            {
+              Sequence ="KQVVQ",
+            },
+            new VirtualSequence
+            {
+              Sequence ="QVVQF",
+            },
+            };
+
+        
+
+
+            ListOfProteins = new List<Protein>
+             {
+                 new Protein
+                 {
+                   ProteinName = "QORL1_HUMAN",
+                   ProteinGI = 95825,
+                   Sequence ="MKGLYFQQSSTDEEITFVFQEKEDLPVTEDNFVKLQVKACALSQINTKLLAEMKMKKDLFPVGREIAGIVLDVGSKVSFFQPDDEVVGILPLDSEDPGLCEVVRVHEHYLVHKPEKVTWTEAAGSIRDGVRAYTALHYLSHLSPGKSVLIMDGASAFGTIAIQLAHHRGAKVISTACSLEDKQCLERFRPPIARVIDVSNGKVHVAESCLEETGGLGVDIVLDAGVRLYSKDDEPAVKLQLLPHKHDIITLLGVGGHWVTTEENLQLDPPDSHCLFLKGATLAFLNDEVWNLSNVQQGKYLCILKDVMEKLSTGVFRPQLDEPIPLYEAKVSMEAVQKNQGRKKQVVQF"
+                 },
+    
+             };
+    }
     }
 }
 

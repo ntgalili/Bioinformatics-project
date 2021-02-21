@@ -1,0 +1,25 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PL"
+        xmlns:BO="clr-namespace:BO;assembly=BL" x:Class="PL.DetailsWindow"
+        mc:Ignorable="d"
+        Title="DetailsWindow" Height="1671.431" Width="808.065">
+    <Grid>
+
+        <DataGrid x:Name="pentamerDataGrid" RowDetailsVisibilityMode="VisibleWhenSelected" Margin="85,119,89.6,100.6" ItemsSource="{Binding}" EnableRowVirtualization="True" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="firstIndexColumn" Width="SizeToHeader" Header="First Index" Binding="{Binding FirstIndex}"/>
+                <DataGridTextColumn x:Name="lastIndexColumn" Width="SizeToHeader" Header="Last Index" Binding="{Binding LastIndex}"/>
+                <DataGridTextColumn x:Name="proteinGIColumn" Width="SizeToHeader" Header="Protein GI" Binding="{Binding ProteinGI}"/>
+                <DataGridTextColumn x:Name="proteinNameColumn" Width="SizeToHeader" Header="Protein Name" Binding="{Binding ProteinName}"/>
+                <DataGridTextColumn x:Name="sequenceColumn" Width="SizeToHeader" Header="Sequence" Binding="{Binding Sequence}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="The Sequence:" HorizontalAlignment="Left" Margin="135,39,0,0" VerticalAlignment="Top" Height="26" Width="120"/>
+        <Label HorizontalAlignment="Left" Margin="285,39,0,0" VerticalAlignment="Top" Height="26" Width="248"/>
+
+    </Grid>
+</Window>

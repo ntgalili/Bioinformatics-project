@@ -10,9 +10,9 @@
         <Label Content="Protein's name:" HorizontalAlignment="Left" Margin="51,130,0,0" VerticalAlignment="Top" Height="39" Width="109"/>
         <Label Content="(or) Accession:" HorizontalAlignment="Left" Margin="51,174,0,0" VerticalAlignment="Top" Width="90" Height="28"/>
         <Label Content="(or) Sequence (single letter code):" HorizontalAlignment="Left" Margin="51,223,0,0" VerticalAlignment="Top" Height="33" Width="196"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="165,134,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="260"/>
-        <TextBox HorizontalAlignment="Left" Height="28" Margin="165,174,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="260"/>
-        <TextBox HorizontalAlignment="Left" Height="106" Margin="51,261,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="576"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="165,134,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="260"/>
+        <TextBox HorizontalAlignment="Left" Height="28" Margin="165,174,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="260"/>
+        <TextBox HorizontalAlignment="Left" Height="106" Margin="51,261,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="576"/>
         <Button Content="Submit" HorizontalAlignment="Left" Margin="444,138,0,0" VerticalAlignment="Top" Width="75"/>
         <Button Content="Reset" HorizontalAlignment="Left" Margin="551,138,0,0" VerticalAlignment="Top" Width="76"/>
         <Button Content="Submit" HorizontalAlignment="Left" Margin="444,174,0,0" VerticalAlignment="Top" Width="75"/>

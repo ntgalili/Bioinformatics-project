@@ -29,7 +29,7 @@ namespace DLAPI
         DO.Protein GetProteinByName(string name);
         DO.Protein GetProteinByGI(int numOfGI);
         #endregion
-
+        
 
         //    #region Person
         //    IEnumerable<DO.Person> GetAllPersons();
