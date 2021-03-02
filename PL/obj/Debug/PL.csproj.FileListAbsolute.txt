@@ -18,3 +18,7 @@ C:\Users\הדסי\source\repos\Bioinformatics-project\PL\obj\Debug\PL.csproj.Cor
 C:\Users\הדסי\source\repos\Bioinformatics-project\PL\obj\Debug\PL.csproj.CopyComplete
 C:\Users\הדסי\source\repos\Bioinformatics-project\PL\obj\Debug\PL.exe
 C:\Users\הדסי\source\repos\Bioinformatics-project\PL\obj\Debug\PL.pdb
+C:\Users\הדסי\source\repos\Bioinformatics-project\PL\obj\Debug\ResultWindow.g.cs
+C:\Users\הדסי\source\repos\Bioinformatics-project\PL\obj\Debug\searchWindow.g.cs
+C:\Users\הדסי\source\repos\Bioinformatics-project\PL\obj\Debug\ResultWindow.baml
+C:\Users\הדסי\source\repos\Bioinformatics-project\PL\obj\Debug\searchWindow.baml

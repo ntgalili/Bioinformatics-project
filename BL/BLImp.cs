@@ -84,5 +84,16 @@ namespace BL
         }
         #endregion
 
+
+        #region VirtualSequence
+        //public void AddVirtualSequence();
+
+        public IEnumerable<BO.VirtualSequence> GetAllVirtualSequences()
+        {
+            return (from item in DataSource.ListOfVS
+                    orderby item.Sequence
+                    select item.Clone());
+        }
+        #endregion
     }
 }

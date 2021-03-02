@@ -45,5 +45,17 @@ namespace DL
             return (DataSource.ListOfProteins.FirstOrDefault(p => p.ProteinGI == numOfGI)).Clone();
         }
         #endregion
+
+
+        #region VirtualSequence
+        //public void AddVirtualSequence();
+
+        public IEnumerable<DO.VirtualSequence> GetAllVirtualSequences()
+        {
+            return(from item in DataSource.ListOfVS
+                   orderby item.Sequence
+                   select item.Clone());
+        }
+        #endregion
     }
 }
