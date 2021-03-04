@@ -3,4 +3,12 @@ C:\Users\הדסי\source\repos\Bioinformatics-project\bin\DLAPI.dll
 C:\Users\הדסי\source\repos\Bioinformatics-project\bin\DLAPI.pdb
 C:\Users\הדסי\source\repos\Bioinformatics-project\DLAPI\obj\Debug\DLAPI.dll
 C:\Users\הדסי\source\repos\Bioinformatics-project\DLAPI\obj\Debug\DLAPI.pdb
+<<<<<<< HEAD
 C:\Users\הדסי\source\repos\Bioinformatics-project\DLAPI\obj\Debug\DLAPI.csprojAssemblyReference.cache
+=======
+C:\Users\user\source\repos\Bioinformatics-project\bin\DLAPI.dll
+C:\Users\user\source\repos\Bioinformatics-project\bin\DLAPI.pdb
+C:\Users\user\source\repos\Bioinformatics-project\DLAPI\obj\Debug\DLAPI.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Bioinformatics-project\DLAPI\obj\Debug\DLAPI.dll
+C:\Users\user\source\repos\Bioinformatics-project\DLAPI\obj\Debug\DLAPI.pdb
+>>>>>>> 82d00cfce97c24f4dfbf54b8e887cafc752c9f06

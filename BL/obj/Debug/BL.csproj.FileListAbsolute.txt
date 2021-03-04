@@ -5,3 +5,10 @@ C:\Users\הדסי\source\repos\Bioinformatics-project\bin\BL.pdb
 C:\Users\הדסי\source\repos\Bioinformatics-project\BL\obj\Debug\BL.csproj.CopyComplete
 C:\Users\הדסי\source\repos\Bioinformatics-project\BL\obj\Debug\BL.dll
 C:\Users\הדסי\source\repos\Bioinformatics-project\BL\obj\Debug\BL.pdb
+C:\Users\user\source\repos\Bioinformatics-project\bin\BL.dll
+C:\Users\user\source\repos\Bioinformatics-project\bin\BL.pdb
+C:\Users\user\source\repos\Bioinformatics-project\BL\obj\Debug\BL.csprojAssemblyReference.cache
+C:\Users\user\source\repos\Bioinformatics-project\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Bioinformatics-project\BL\obj\Debug\BL.csproj.CopyComplete
+C:\Users\user\source\repos\Bioinformatics-project\BL\obj\Debug\BL.dll
+C:\Users\user\source\repos\Bioinformatics-project\BL\obj\Debug\BL.pdb

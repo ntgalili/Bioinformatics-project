@@ -11,7 +11,9 @@ namespace DS
     {
 
 
-
+        /// <summary>
+        /// 
+        /// </summary>
         public static List<Pentamer> ListOfPentamers;
         public static List<Protein> ListOfProteins;
         public static List<VirtualSequence> ListOfVS;

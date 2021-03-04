@@ -5,8 +5,17 @@ C:\Users\הדסי\source\repos\Bioinformatics-project\Help\obj\Debug\Help.csproj
 C:\Users\הדסי\source\repos\Bioinformatics-project\Help\obj\Debug\Help.exe
 C:\Users\הדסי\source\repos\Bioinformatics-project\Help\obj\Debug\Help.pdb
 C:\Users\הדסי\source\repos\Bioinformatics-project\Help\obj\Debug\Help.csprojAssemblyReference.cache
+<<<<<<< HEAD
 C:\Users\הדסי\source\repos\Bioinformatics-project\Help\bin\Debug\DLAPI.dll
 C:\Users\הדסי\source\repos\Bioinformatics-project\Help\bin\Debug\DS.dll
 C:\Users\הדסי\source\repos\Bioinformatics-project\Help\bin\Debug\DLAPI.pdb
 C:\Users\הדסי\source\repos\Bioinformatics-project\Help\bin\Debug\DS.pdb
 C:\Users\הדסי\source\repos\Bioinformatics-project\Help\obj\Debug\Help.csproj.CopyComplete
+=======
+C:\Users\user\source\repos\Bioinformatics-project\Help\bin\Debug\Help.exe.config
+C:\Users\user\source\repos\Bioinformatics-project\Help\bin\Debug\Help.exe
+C:\Users\user\source\repos\Bioinformatics-project\Help\bin\Debug\Help.pdb
+C:\Users\user\source\repos\Bioinformatics-project\Help\obj\Debug\Help.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Bioinformatics-project\Help\obj\Debug\Help.exe
+C:\Users\user\source\repos\Bioinformatics-project\Help\obj\Debug\Help.pdb
+>>>>>>> 82d00cfce97c24f4dfbf54b8e887cafc752c9f06

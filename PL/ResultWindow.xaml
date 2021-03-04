@@ -8,7 +8,7 @@
         Title="ResultWindow" Height="1619.248" Width="1218.605">
     <Grid>
         <Label Content="Result" HorizontalAlignment="Left" Margin="52,21,0,0" VerticalAlignment="Top" Height="43" Width="253"/>
-        <TextBox HorizontalAlignment="Left" Height="309" Margin="52,69,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="1115"/>
+        <TextBox HorizontalAlignment="Left" Height="309" Margin="52,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1115"/>
 
     </Grid>
 </Window>
