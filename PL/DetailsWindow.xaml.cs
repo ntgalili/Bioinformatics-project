@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLAPI;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,17 +20,16 @@ namespace PL
     /// </summary>
     public partial class DetailsWindow : Window
     {
-        public DetailsWindow()
+        IBL bl;
+        BO.VirtualSequence vs;
+        public DetailsWindow(IBL _bl, BO.VirtualSequence _vs)
         {
             InitializeComponent();
+            bl = _bl;
+            vs = _vs;
+            pentamerDataGrid.DataContext = bl.GetPentamersBySequence(vs.Sequence);
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
 
-            System.Windows.Data.CollectionViewSource pentamerViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("pentamerViewSource")));
-            // Load data by setting the CollectionViewSource.Source property:
-            // pentamerViewSource.Source = [generic data source]
-        }
     }
 }

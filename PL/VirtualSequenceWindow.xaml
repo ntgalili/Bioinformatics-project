@@ -9,10 +9,19 @@
         Title="VirtualSequenceWindow" Height="876.6" Width="826.4">
     <Grid>
 
-        <DataGrid x:Name="virtualSequenceDataGrid" RowDetailsVisibilityMode="VisibleWhenSelected" Margin="80,136,80,67.2" ItemsSource="{Binding}" EnableRowVirtualization="True" AutoGenerateColumns="False">
+        <DataGrid x:Name="virtualSequenceDataGrid" RowDetailsVisibilityMode="VisibleWhenSelected" Margin="80,136,80,67.2" ItemsSource="{Binding}" EnableRowVirtualization="True" AutoGenerateColumns="False" SelectionChanged="virtualSequenceDataGrid_SelectionChanged">
             <DataGrid.Columns>
                 <DataGridTextColumn x:Name="sequenceColumn" Width="SizeToHeader" Header="Sequence" Binding="{Binding Sequence}"/>
-                <DataGridTextColumn x:Name="sizeColumn" Width="SizeToHeader" Header="size" Binding="{Binding size}"/>
+                <DataGridTextColumn x:Name="sizeColumn" Width="SizeToHeader" Header="size" Binding="{Binding Size}"/>
+
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button x:Name="show" Content="show"  ToolTip="click show the locations " Click="show_Click"  />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
             </DataGrid.Columns>
         </DataGrid>
         <ComboBox x:Name="cutComboBox" HorizontalAlignment="Left" Margin="396,57,0,0" VerticalAlignment="Top" Width="221" Height="37" SelectedItem="{Binding CuttingType}" SelectionChanged="ComboBox_SelectionChanged"/>

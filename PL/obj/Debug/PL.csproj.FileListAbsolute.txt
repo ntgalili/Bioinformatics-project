@@ -51,3 +51,10 @@ C:\Users\user\source\repos\Bioinformatics-project\PL\obj\Debug\PL.csproj.CopyCom
 C:\Users\user\source\repos\Bioinformatics-project\PL\obj\Debug\PL.exe
 C:\Users\user\source\repos\Bioinformatics-project\PL\obj\Debug\PL.pdb
 >>>>>>> 82d00cfce97c24f4dfbf54b8e887cafc752c9f06
+C:\Users\הדסי\source\repos\Bioinformatics-project\PL\obj\Debug\DetailsWindow.g.cs
+C:\Users\הדסי\source\repos\Bioinformatics-project\PL\obj\Debug\VirtualSequenceWindow.g.cs
+C:\Users\הדסי\source\repos\Bioinformatics-project\PL\obj\Debug\DetailsWindow.baml
+C:\Users\הדסי\source\repos\Bioinformatics-project\PL\obj\Debug\VirtualSequenceWindow.baml
+C:\Users\הדסי\source\repos\Bioinformatics-project\bin\PL.exe.config
+C:\Users\הדסי\source\repos\Bioinformatics-project\bin\PL.exe
+C:\Users\הדסי\source\repos\Bioinformatics-project\bin\PL.pdb

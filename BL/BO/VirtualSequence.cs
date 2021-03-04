@@ -9,6 +9,6 @@ namespace BO
       public class VirtualSequence
       {
            public string Sequence { get; set; }
-           public int size { get; set; }
+           public int Size { get; set; }
       }
 }

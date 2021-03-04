@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLAPI;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,15 +20,32 @@ namespace PL
     /// </summary>
     public partial class VirtualSequenceWindow : Window
     {
-        public VirtualSequenceWindow()
+        IBL bl;
+        BO.VirtualSequence selected;
+        public VirtualSequenceWindow(IBL _bl)
         {
             InitializeComponent();
+            bl = _bl;
             cutComboBox.ItemsSource = Enum.GetValues(typeof(BO.CuttingType));
+            
         }
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            if((sender as ComboBox).SelectedItem.ToString() =="Five")
+            virtualSequenceDataGrid.DataContext = bl.GetAllVirtualSequences();
+        }
 
+        private void virtualSequenceDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            selected = (sender as DataGrid).SelectedItem as BO.VirtualSequence;
+
+        }
+
+        private void show_Click(object sender, RoutedEventArgs e)
+        {
+            DetailsWindow detailsWindow = new DetailsWindow (bl, (sender as Button).DataContext as BO.VirtualSequence);
+            detailsWindow.Show();
         }
     }
 }

@@ -46,6 +46,14 @@ namespace BL
                 return UniquenessTest.SemiUnique;
             return UniquenessTest.NotUnique;
         }
+
+         public IEnumerable<BO.Pentamer> GetPentamersBySequence(string S)
+        {
+            return from item in dl.GetPentamersBySequence(S)
+                   select PentamerDoBoAdapter(item);
+        }
+
+
         //public IEnumerable<BO.Pentamer> Cut(Protein protein)
         //{
         //    IEnumerable<BO.UniquenessTest> result = new List <BO.UniquenessTest>();
@@ -90,9 +98,17 @@ namespace BL
 
         public IEnumerable<BO.VirtualSequence> GetAllVirtualSequences()
         {
-            return (from item in DataSource.ListOfVS
+            return (from item in dl.GetAllVirtualSequences()
                     orderby item.Sequence
-                    select item.Clone());
+                    select VirtualSequenceDoBoAdapter(item));
+        }
+
+
+        BO.VirtualSequence VirtualSequenceDoBoAdapter(DO.VirtualSequence DOVS)
+        {
+            BO.VirtualSequence BOVS = new BO.VirtualSequence();
+            DOVS.CopyPropertiesTo(BOVS);
+            return BOVS;
         }
         #endregion
     }

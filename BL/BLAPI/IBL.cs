@@ -14,6 +14,7 @@ namespace BLAPI
 
         #region Pentamer
         BO.UniquenessTest search(BO.Pentamer pnta);
+        IEnumerable<BO.Pentamer> GetPentamersBySequence(string S);
         //IEnumerable<BO.Pentamer> cutting(string str);
         #endregion
 
@@ -23,6 +24,9 @@ namespace BLAPI
         BO.Protein GetProteinByName(string name);
         BO.Protein GetProteinByGI(int numOfGI);
         #endregion
+
+
+        IEnumerable<BO.VirtualSequence> GetAllVirtualSequences();
 
     }
 }

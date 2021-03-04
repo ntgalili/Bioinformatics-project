@@ -1,4 +1,3 @@
-C:\Users\הדסי\source\repos\Bioinformatics-project\DS\obj\Debug\DS.csprojAssemblyReference.cache
 C:\Users\הדסי\source\repos\Bioinformatics-project\DS\obj\Debug\DS.csproj.CoreCompileInputs.cache
 C:\Users\הדסי\source\repos\Bioinformatics-project\bin\DS.dll
 C:\Users\הדסי\source\repos\Bioinformatics-project\bin\DS.pdb

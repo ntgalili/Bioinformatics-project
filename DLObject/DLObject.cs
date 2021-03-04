@@ -26,7 +26,16 @@ namespace DL
         {
             return from P in DataSource.ListOfPentamers
                    where P.Sequence == pntaDO.Sequence
-                   select P;
+                   select P.Clone();
+        }
+
+        public IEnumerable<DO.Pentamer> GetPentamersBySequence(string S)
+        {
+            return from item in DataSource.ListOfPentamers
+            where item.Sequence == S
+            orderby item.FirstIndex
+            orderby item.ProteinName
+            select item.Clone();
         }
         #endregion
 

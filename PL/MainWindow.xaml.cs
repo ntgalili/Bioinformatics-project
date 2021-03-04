@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLAPI;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,16 @@ namespace PL
     /// </summary>
     public partial class MainWindow : Window
     {
+        IBL bl = BLFactory.GetBL();
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            VirtualSequenceWindow vswindow = new VirtualSequenceWindow(bl);
+            vswindow.ShowDialog();
         }
     }
 }

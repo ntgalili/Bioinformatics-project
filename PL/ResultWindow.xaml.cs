@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLAPI;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,12 @@ namespace PL
     /// </summary>
     public partial class ResultWindow : Window
     {
-        public ResultWindow()
+
+        public ResultWindow(IBL _bl)
         {
             InitializeComponent();
+
+            
         }
     }
 }
