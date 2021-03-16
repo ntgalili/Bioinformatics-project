@@ -10,11 +10,11 @@ none
 false
 TRACE
 C:\Users\user\Source\Repos\Bioinformatics-project\PL\App.xaml
-31158775033
+5518651158
 
-71520346116
+91769152395
 14894599617
-MainWindow.xaml;ResultWindow.xaml;searchWindow.xaml;
+DetailsWindow.xaml;MainWindow.xaml;ResultWindow.xaml;searchWindow.xaml;VirtualSequenceWindow.xaml;
 
 True
 
