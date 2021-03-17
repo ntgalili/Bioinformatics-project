@@ -1,8 +1,16 @@
 ﻿
 
+<<<<<<< HEAD
 FC:\Users\הדסי\Source\Repos\Bioinformatics-project\PL\DetailsWindow.xaml;;
 FC:\Users\הדסי\Source\Repos\Bioinformatics-project\PL\MainWindow.xaml;;
 FC:\Users\הדסי\Source\Repos\Bioinformatics-project\PL\ResultWindow.xaml;;
 FC:\Users\הדסי\Source\Repos\Bioinformatics-project\PL\searchWindow.xaml;;
 FC:\Users\הדסי\Source\Repos\Bioinformatics-project\PL\VirtualSequenceWindow.xaml;;
+=======
+FC:\Users\user\Source\Repos\Bioinformatics-project\PL\MainWindow.xaml;;
+FC:\Users\user\Source\Repos\Bioinformatics-project\PL\ResultWindow.xaml;;
+FC:\Users\user\Source\Repos\Bioinformatics-project\PL\searchWindow.xaml;;
+FC:\Users\user\Source\Repos\Bioinformatics-project\PL\DetailsWindow.xaml;;
+FC:\Users\user\Source\Repos\Bioinformatics-project\PL\VirtualSequenceWindow.xaml;;
+>>>>>>> f6b41aad881f476af2235e783cf45b505d142549
 
