@@ -51,7 +51,7 @@ namespace DL
         }
         public DO.Protein GetProteinByGI(int numOfGI)
         {
-            return (DataSource.ListOfProteins.FirstOrDefault(p => p.ProteinGI == numOfGI)).Clone();
+            return (DataSource.ListOfProteins.FirstOrDefault(p => p.ProteinGI.Equals(numOfGI))).Clone();
         }
         #endregion
 

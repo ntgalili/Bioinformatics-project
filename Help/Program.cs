@@ -13,27 +13,45 @@ namespace Help
         {
             List<DO.VirtualSequence> listS = DataSource.ListOfVS;
             List<DO.VirtualSequence> listS2 = new List<DO.VirtualSequence>();
-            //foreach (DO.Pentamer item in DataSource.ListOfPentamers)
+
+
+            string str = "MEDSTSPKQEKENQEELGETRRPWEGKTAASPQYSEPESSEPLEAKQGPETGRQSRSSRPWSPQSRAKTPLGGPAGPETSSPAPVSPREPSSSPSPLAPARQDLAAPPQSDRTTSVIPEAGTPYPDPLEQSSDKRESTPHHTSQSEGNTFQQSQQPKPHLCGRRDVSYNNAKQKELRFDVFQEEDSNSDYDLQQPAPGGSEVAPSMLEITIQNAKAYLLKTSSNSGFNLYDHLSNMLTKILNERPENAVDIFENISQDVKMAHFSKKFDALQNENELLPTYEIAEKQKALFLQGHLEGVDQELEDEIAENALPNVMESAFYFEQAGVGLGTDETYRIFLALKQLTDTHPIQRCRFWGKILGLEMNYIVAEVEFREGEDEEEVEEEDVAEERDNGESEAHEDEEDELPKSFYKAPQAIPKEESRTGANKYVYFVCNEPGRPWVKLPPVIPAQIVIARKIKKFFTGRLDAPIISYPPFPGNESNYLRAQIARISAGTHVSPLGFYQFGEEEGEEEEEAEGGRNSFEENPDFEGIQVIDLVESLSNWVHHVQHILSQGRCNWFNSIQKNEEEEEEEDEEKDDSDYIEQEVGLPLLTPISEDLEIQNIPPWTTRLSSNLIPQYAIAVLQSNLWPGAYAFSNGKKFENFYIGWGHKYSPDNYTPPVPPPVYQEYPSGPEITEMDDPSVEEEQAFRAAQEAVLLAAENEESEEDEDEEDDYD";
+
+            //for (int i = 0; i < str.Length-4; i++)
             //{
-            //    if (listS.Find(s => item.Sequence == s) == null)
-            //    {
-            //        listS.Add(item.Sequence);
-            //    }
+            //    Console.WriteLine("             new Pentamer");
+            //    Console.WriteLine("              {");
+            //    Console.WriteLine("                 FirstIndex=" + i + ",");
+            //    Console.WriteLine("                 LastIndex=" + (i + 4) + ",");
+            //    Console.WriteLine("                 ProteinName =  \"RSH4A_HUMAN\" " + ",");
+            //    Console.WriteLine("                  ProteinGI = \"5TD94\"" + ",");
+            //    Console.WriteLine("                 Sequence =\"" + str.Substring(i, 5) + "\"" + ",");
+            //    Console.WriteLine("              },");
             //}
-            //foreach(string item in listS)
-            //{
-            //    Console.WriteLine("            new VirtualSequence");
-            //    Console.WriteLine("            {");
-            //    Console.WriteLine($"                 Sequence={item}");
-            //    Console.WriteLine($"                 Size={ item.Length}");
-            //    Console.WriteLine("            },");
-            //}
-            //List<string> listS = new List<string>();
-            string str = "MTDTVFSNSSNRWMYPSDRPLQSNDKEQLQAGWSVHPGGQPDRQRKQEELTDEEKEIINRVIARAEKMEEMEQERIGRLVDRLENMRKNVAGDGVNRCILCGEQLGMLGSACVVCEDCKKNVCTKCGVETNNRLHSVWLCKICIEQREVWKRSGAWFFKGFPKQVLPQPMPIKKTKPQQPVSEPAAPEQPAPEPKHPARAPARGDSEDRRGPGQKTGPDPASAPGRGNYGPPVRRASEARMSSSSRDSESWDHSGGAGDSSRSPAGLRRANSVQASRPAPGSVQSPAPPQPGQPGTPGGSRPGPGPAGRFPDQKPEVAPSDPGTTAPPREERTGGVGGYPAVGAREDRMSHPSGPYSQASAAAPQPAAARQPPPPEEEEEEANSYDSDEATTLGALEFSLLYDQDNSSLQCTIIKAKGLKPMDSNGLADPYVKLHLLPGASKSNKLRTKTLRNTRNPIWNETLVYHGITDEDMQRKTLRISVCDEDKFGHNEFIGETRFSLKKLKPNQRKNFNICLERVIPMKRAGTTGSARGMALYEEEQVERVGDIEERGKILVSLMYSTQQGGLIVGIIRCVHLAAMDANGYSDPFVKLWLKPDMGKKAKHKTQIKKKTLNPEFNEEFFYDIKHSDLAKKSLDISVWDYDIGKSNDYIGGCQLGISAKGERLKHWYECLKNKDKKIERWHQLQNENHVSSD";
+
+
+            foreach (DO.Pentamer item in DataSource.ListOfPentamers)
+            {
+                if (listS.Find(s => item.Sequence == s) == null)
+                {
+                    listS.Add(item.Sequence);
+                }
+            }
+            foreach (string item in listS)
+            {
+                Console.WriteLine("            new VirtualSequence");
+                Console.WriteLine("            {");
+                Console.WriteLine($"                 Sequence={item}");
+                Console.WriteLine($"                 Size={ item.Length}");
+                Console.WriteLine("            },");
+            }
+            List<string> listS = new List<string>();
+
+
             for (int i = 0; i < str.Length - 4; i++)
             {
                 bool flag = true;
-                foreach(DO.VirtualSequence item in listS)
+                foreach (DO.VirtualSequence item in listS)
                 {
                     if (item.Sequence == str.Substring(i, 5))
                         flag = false; ;

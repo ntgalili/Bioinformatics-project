@@ -7,13 +7,13 @@ using System.Threading;
 using BO;
 //using BO;
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using DLAPI;
-using BLAPI;
-using System.Threading;
-using BO;
+////using System;
+////using System.Collections.Generic;
+////using System.Linq;
+////using DLAPI;
+////using BLAPI;
+////using System.Threading;
+////using BO;
 //
 
 namespace BL
@@ -37,7 +37,7 @@ namespace BL
             IEnumerable<DO.Pentamer> pentamerList = dl.Search(pntaDO);
             foreach (DO.Pentamer pntDO in pentamerList)
             {
-                if (pntDO.ProteinGI != pntaBO.ProteinGI)
+                if (!pntDO.ProteinGI.Equals(pntaBO.ProteinGI))
                     count++;
             }
             if (count == 0)
