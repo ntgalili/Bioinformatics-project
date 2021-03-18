@@ -1,6 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\BL\\BLAPI",
+    "\\DLObject",
+    "\\DS",
+    "\\Help",
+    "\\PL"
   ],
+  "SelectedNode": "\\PL",
   "PreviewInSolutionExplorer": false
 }

@@ -32,10 +32,10 @@ namespace DL
         public IEnumerable<DO.Pentamer> GetPentamersBySequence(string S)
         {
             return from item in DataSource.ListOfPentamers
-            where item.Sequence == S
-            orderby item.FirstIndex
-            orderby item.ProteinName
-            select item.Clone();
+                  where item.Sequence == S
+                  orderby item.FirstIndex
+                  orderby item.ProteinName
+                  select item.Clone();
         }
         #endregion
 

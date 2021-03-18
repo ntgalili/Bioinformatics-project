@@ -21,11 +21,14 @@ namespace PL
     public partial class ResultWindow : Window
     {
 
-        public ResultWindow(IBL _bl)
+        public ResultWindow(IBL _bl,BO.Protein p, List<BO.Pentamer> Unique, List<BO.Pentamer> SemiUnique)
         {
             InitializeComponent();
-
-            
+            SemiUniqueDataGrid.DataContext = SemiUnique;
+            UniqueDataGrid.DataContext = Unique;
+            seqtextBox.DataContext = p.Sequence;
         }
+
+       
     }
 }

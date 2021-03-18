@@ -32,5 +32,11 @@ namespace PL
             VirtualSequenceWindow vswindow = new VirtualSequenceWindow(bl);
             vswindow.ShowDialog();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            searchWindow win = new searchWindow(bl);
+            win.ShowDialog();
+        }
     }
 }

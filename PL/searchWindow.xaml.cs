@@ -48,6 +48,24 @@ namespace PL
                     SemiUnique.Add(pnta);
             }
         }
-        
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            BO.Protein p = new BO.Protein();
+            try
+            {
+                p = bl.GetProteinBySequence(seqTextBox.Text);
+            }
+            catch(Exception ex)
+            {
+                p = new BO.Protein();
+                p.Sequence = seqTextBox.Text;
+                p.ProteinGI = "";
+                p.ProteinName = "";
+            }
+            Cut(p);
+            ResultWindow win = new ResultWindow(bl,p, Unique, SemiUnique);
+            win.ShowDialog();
+        }
     }
 }
