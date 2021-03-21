@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\user\Source\Repos\Bioinformatics-project\PL\obj\Debug\
+C:\Users\user\source\repos\Bioinformatics-project\PL\obj\Debug\
 PL
 none
 false
 DEBUG;TRACE
-C:\Users\user\Source\Repos\Bioinformatics-project\PL\App.xaml
+C:\Users\user\source\repos\Bioinformatics-project\PL\App.xaml
 5518651158
 
 91769152395
-141470234914
+14-1472736480
 DetailsWindow.xaml;MainWindow.xaml;ResultWindow.xaml;searchWindow.xaml;VirtualSequenceWindow.xaml;
 
-True
+False
 

@@ -26,8 +26,9 @@ namespace BLAPI
         #endregion
 
 
+        #region VirtualSequence
         IEnumerable<BO.VirtualSequence> GetAllVirtualSequences();
-
+        #endregion
     }
 }
     
