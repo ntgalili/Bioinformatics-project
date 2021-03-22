@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Xml.Serialization;
 using DO;
 namespace DS
 {
@@ -20,10 +21,32 @@ namespace DS
 
 
 
+
+        public static void SaveListToXMLSerializer<T>(List<T> list, string filePath)
+        {
+            try
+            {
+                FileStream file = new FileStream(@"xml\" + filePath, FileMode.Create);
+                XmlSerializer x = new XmlSerializer(list.GetType());
+                x.Serialize(file, list);
+                file.Close();
+            }
+            catch (Exception ex)
+            {
+                //  throw new DO.XMLFileLoadCreateException(filePath, $"fail to create xml file: {filePath}", ex);
+            }
+        }
+
         static DataSource()
         {
             InitAllLists();
+            SaveListToXMLSerializer(ListOfPentamers, @"ListOfPentamersXml.xml");
+            SaveListToXMLSerializer(ListOfProteins, @"ListOfProteinsXml.xml");
+            SaveListToXMLSerializer(ListOfVS, @"ListOfVSXml.xml");
+
         }
+
+
         static void InitAllLists()
         {
             ListOfPentamers = new List<Pentamer>
@@ -26730,7 +26753,7 @@ namespace DS
                  new Protein
                  {
                    ProteinName = "RP3A_HUMAN",
-                   //ProteinGI = "95825",
+                   ProteinGI = "9Y2J0",
                    Sequence ="MTDTVFSNSSNRWMYPSDRPLQSNDKEQLQAGWSVHPGGQPDRQRKQEELTDEEKEIINRVIARAEKMEEMEQERIGRLVDRLENMRKNVAGDGVNRCILCGEQLGMLGSACVVCEDCKKNVCTKCGVETNNRLHSVWLCKICIEQREVWKRSGAWFFKGFPKQVLPQPMPIKKTKPQQPVSEPAAPEQPAPEPKHPARAPARGDSEDRRGPGQKTGPDPASAPGRGNYGPPVRRASEARMSSSSRDSESWDHSGGAGDSSRSPAGLRRANSVQASRPAPGSVQSPAPPQPGQPGTPGGSRPGPGPAGRFPDQKPEVAPSDPGTTAPPREERTGGVGGYPAVGAREDRMSHPSGPYSQASAAAPQPAAARQPPPPEEEEEEANSYDSDEATTLGALEFSLLYDQDNSSLQCTIIKAKGLKPMDSNGLADPYVKLHLLPGASKSNKLRTKTLRNTRNPIWNETLVYHGITDEDMQRKTLRISVCDEDKFGHNEFIGETRFSLKKLKPNQRKNFNICLERVIPMKRAGTTGSARGMALYEEEQVERVGDIEERGKILVSLMYSTQQGGLIVGIIRCVHLAAMDANGYSDPFVKLWLKPDMGKKAKHKTQIKKKTLNPEFNEEFFYDIKHSDLAKKSLDISVWDYDIGKSNDYIGGCQLGISAKGERLKHWYECLKNKDKKIERWHQLQNENHVSSD"
                  },
              };
