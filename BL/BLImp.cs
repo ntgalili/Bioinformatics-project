@@ -7,13 +7,13 @@ using System.Threading;
 using BO;
 //using BO;
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using DLAPI;
-using BLAPI;
-using System.Threading;
-using BO;
+////using System;
+////using System.Collections.Generic;
+////using System.Linq;
+////using DLAPI;
+////using BLAPI;
+////using System.Threading;
+////using BO;
 //
 
 namespace BL
@@ -37,7 +37,7 @@ namespace BL
             IEnumerable<DO.Pentamer> pentamerList = dl.Search(pntaDO);
             foreach (DO.Pentamer pntDO in pentamerList)
             {
-                if (pntDO.ProteinGI != pntaBO.ProteinGI)
+                if (!pntDO.ProteinGI.Equals(pntaBO.ProteinGI))
                     count++;
             }
             if (count == 0)
@@ -46,6 +46,14 @@ namespace BL
                 return UniquenessTest.SemiUnique;
             return UniquenessTest.NotUnique;
         }
+
+         public IEnumerable<BO.Pentamer> GetPentamersBySequence(string S)
+        {
+            return from item in dl.GetPentamersBySequence(S)
+                   select PentamerDoBoAdapter(item);
+        }
+
+
         //public IEnumerable<BO.Pentamer> Cut(Protein protein)
         //{
         //    IEnumerable<BO.UniquenessTest> result = new List <BO.UniquenessTest>();
@@ -84,5 +92,24 @@ namespace BL
         }
         #endregion
 
+
+        #region VirtualSequence
+        //public void AddVirtualSequence();
+
+        public IEnumerable<BO.VirtualSequence> GetAllVirtualSequences()
+        {
+            return (from item in dl.GetAllVirtualSequences()
+                    orderby item.Sequence
+                    select VirtualSequenceDoBoAdapter(item));
+        }
+
+
+        BO.VirtualSequence VirtualSequenceDoBoAdapter(DO.VirtualSequence DOVS)
+        {
+            BO.VirtualSequence BOVS = new BO.VirtualSequence();
+            DOVS.CopyPropertiesTo(BOVS);
+            return BOVS;
+        }
+        #endregion
     }
 }

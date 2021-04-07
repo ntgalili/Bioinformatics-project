@@ -12,64 +12,34 @@ namespace DLAPI
     // Delete - delete an instance
     public interface IDL
     {
-
-
-        //CRUD Logic:
-        // Create - add new instance
-        // Request - ask for an instance or for a collection
-        // Update - update properties of an instance
-        // Delete - delete an instance
-            #region Pentamer
-            IEnumerable<DO.Pentamer> Search(DO.Pentamer pntaDO);
-        #endregion
-
-
-        #region Protein
-        DO.Protein GetProteinBySequence(string str);
+        //#region Protein
+        //DO.Protein GetProtein(string ProteinGI, string ProteinName);
+        DO.Protein GetProteinBySequence(string sequence);
         DO.Protein GetProteinByName(string name);
         DO.Protein GetProteinByGI(int numOfGI);
-        #endregion
-
-
-        //    #region Person
-        //    IEnumerable<DO.Person> GetAllPersons();
-        //IEnumerable<DO.Person> GetAllPersonsBy(Predicate<DO.Person> predicate);
-        //DO.Person GetPerson(int id);
-        //void AddPerson(DO.Person person);
-        //void UpdatePerson(DO.Person person);
-        //void UpdatePerson(int id, Action<DO.Person> update); //method that knows to updt specific fields in Person
-        //void DeletePerson(int id);
+        //void AddProtein(DO.Protein protein);
+        //void DeleteProtein(string ProteinGI, string ProteinName);
+        //IEnumerable<DO.Protein> GetALLProtein();
         //#endregion
 
-        //#region Student
-        //DO.Student GetStudent(int id);
-        //IEnumerable<DO.Student> GetAllStudents();
-        //IEnumerable<object> GetStudentListWithSelectedFields(Func<DO.Student, object> generate);
-        //void AddStudent(DO.Student student);
-        //void UpdateStudent(DO.Student student);
-        //void UpdateStudent(int id, Action<DO.Student> update); //method that knows to updt specific fields in Student
-        //void DeleteStudent(int id); // removes only Student, does not remove the appropriate Person...
+        //#region VirtualSequence
+        //DO.VirtualSequence GetVirtualSequence(string Sequence);
+        //void AddVirtualSequence(DO.VirtualSequence VirtualSequence);
+        //void DeleteVirtualSequence(string Sequence);
+        //IEnumerable<DO.VirtualSequence> GetALLVirtualSequencesBySize(int size);
+        IEnumerable<DO.VirtualSequence> GetAllVirtualSequences();
         //#endregion
 
-        //#region StudentInCourse
-        //IEnumerable<DO.StudentInCourse> GetStudentsInCourseList(Predicate<DO.StudentInCourse> predicate);        
-        //void AddStudentInCourse(int perID, int courseID, float grade=0);
-        //void UpdateStudentGradeInCourse(int perID, int courseID, float grade);
-        //void DeleteStudentInCourse(int perID, int courseID);
-        //void DeleteStudentFromAllCourses(int perID);
 
+        //#region Pentamer
+        //IEnumerable<DO.Pentamer> GetAllPentamer();
+        IEnumerable<DO.Pentamer> GetPentamersBySequence(string sequence);
+       // DO.Pentamer GetPentamerByProteinGI(string ProteinGI);
+        //DO.Pentamer GetPentamerByProteinName(string ProteinName);
+        DO.Pentamer GetPentamerBySequence(string Sequence);
+        //void AddPentamer(DO.Pentamer pentamer);
+        //void DeletePentamer(string proteinGI, string sequence, int firstIndex);
+        IEnumerable<DO.Pentamer> Search(DO.Pentamer pntaDO);
         //#endregion
-
-        //#region Course
-        //DO.Course GetCourse(int id);
-        //IEnumerable<DO.Course> GetAllCourses();
-
-        //#endregion
-
-        //#region Lecturer
-        //IEnumerable<DO.LecturerInCourse> GetLecturersInCourseList(Predicate<DO.LecturerInCourse> predicate);
-
-        //#endregion
-
     }
 }

@@ -8,7 +8,7 @@ namespace DO
 {
     public class Protein
     {
-        public int ProteinGI { get; set; }
+        public string ProteinGI { get; set; }
         public string ProteinName { get; set; }
         public string Sequence { get; set; }
     }

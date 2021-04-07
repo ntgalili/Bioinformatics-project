@@ -26,7 +26,21 @@ namespace DL
         {
             return from P in DataSource.ListOfPentamers
                    where P.Sequence == pntaDO.Sequence
-                   select P;
+                   select P.Clone();
+        }
+
+        public IEnumerable<DO.Pentamer> GetPentamersBySequence(string S)
+        {
+            return from item in DataSource.ListOfPentamers
+                   where item.Sequence == S
+                   orderby item.FirstIndex
+                   orderby item.ProteinName
+                   select item.Clone();
+        }
+
+        public DO.Pentamer GetPentamerBySequence(string str)
+        {
+            return null;
         }
         #endregion
 
@@ -42,7 +56,19 @@ namespace DL
         }
         public DO.Protein GetProteinByGI(int numOfGI)
         {
-            return (DataSource.ListOfProteins.FirstOrDefault(p => p.ProteinGI == numOfGI)).Clone();
+            return (DataSource.ListOfProteins.FirstOrDefault(p => p.ProteinGI.Equals(numOfGI))).Clone();
+        }
+        #endregion
+
+
+        #region VirtualSequence
+        //public void AddVirtualSequence();
+
+        public IEnumerable<DO.VirtualSequence> GetAllVirtualSequences()
+        {
+            return (from item in DataSource.ListOfVS
+                    orderby item.Sequence
+                    select item.Clone());
         }
         #endregion
     }

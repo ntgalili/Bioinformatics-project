@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Button Content="VSwindow" HorizontalAlignment="Left" Margin="143,329,0,0" VerticalAlignment="Top" Width="159" Height="38" Click="Button_Click"/>
+        <Button Content="search" HorizontalAlignment="Left" Margin="413,326,0,0" VerticalAlignment="Top" Width="113" Height="41" Click="Button_Click_1"/>
+
     </Grid>
 </Window>
