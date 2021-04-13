@@ -9,20 +9,90 @@ namespace Help
 {
     class Program
     {
+
         static void Main(string[] args)
         {
-            string str = "MDTDSQRSHLSSFTMKLMDKFHSPKIKRTPSKKGKPAEVSVKIPEKPVNKEATDRFLPEGYPLPLDLEQQAVEFMSTSAVASRSQRQKNLSWLEEKEKEVVSALRYFKTIVDKMAIDKKVLEMLPGSASKVLEAILPLVQNDPRIQHSSALSSCYSRVYQSLANLIRWSDQVMLEGVNSEDKEMVTTVKGVIKAVLDGVKELVRLTIEKQGRPSPTSPVKPSSPASKPDGPAELPLTDREVEILNKTTGMSQSTELLPDATDEEVAPPKPPLPGIRVVDNSPPPALPPKKRQSAPSPTRVAVVAPMSRATSGSSLPVGINRQDFDVDCYAQRRLSGGSHSYGGESPRLSPCSSIGKLSKSDEQLSSLDRDSGQCSRNTSCETLDHYDPDYEFLQQDLSNADQIPQQTAWNLSPLPESLGESGSPFLGPPFQLPLGGHPQPDGPLAPGQQTDTPPALPEKKRRSAASQTADGSGCRVSYERHPSQYDNISGEDLQSTAPIPSVPYAPFAAILPFQHGGSSAPVEFVGDFTAPESTGDPEKPPPLPEKKNKHMLAYMQLLEDYSEPQPSMFYQTPQNEHIYQQKNKLLMEVYGFSDSFSGVDSVQELAPPPALPPKQRQLEPPAGKDGHPRDPSAVSGVPGKDSRDGSERAPKSPDALESAQSEEEVDELSLIDHNEIMSRLTLKQEGDDGPDVRGGSGDILLVHATETDRKDLVLYCEAFLTTYRTFISPEELIKKLQYRYEKFSPFADTFKKRVSKNTFFVLVRVVDELCLVELTEEILKLLMELVFRLVCNGELSLARVLRKNILDKVDQKKLLRCATSSQPLAARGVAARPGTLHDFHSHEIAEQLTLLDAELFYKIEIPEVLLWAKEQNEEKSPNLTQFTEHFNNMSYWVRSIIMLQEKAQDRERLLLKFIKIMKHLRKLNNFNSYLAILSALDSAPIRRLEWQKQTSEGLAEYCTLIDSSSSFRAYRAALSEVEPPCIPYLGLILQDLTFVHLGNPDYIDGKVNFSKRWQQFNILDSMRCFQQAHYDMRRNDDIINFFNDFSDHLAEEALWELSLKIKPRNITRRKTDREEKT";
-            for (int i = 0; i < str.Length-4; i++)
+            IDL dl = DLFactory.GetDL();
+            //DO.Protein p = new DO.Protein();
+
+            //string strseq, strname, strGi;
+
+            //for (int i = 0; i < 5; i++)
+            //{
+            //    strname = Console.ReadLine();
+            //    strGi = Console.ReadLine();
+            //    strseq = Console.ReadLine();
+
+            //    p.ProteinGI = strGi;
+            //    p.ProteinName = strname;
+            //    p.Sequence = strseq;
+            //    dl.AddProtein(p);
+            //}
+
+            DO.Pentamer pent = new DO.Pentamer();
+            //foreach (DO.Protein p in dl.GetALLProtein())
+            //{
+            //try
+            //{
+            //    dl.GetPentamerByProteinGI(p.ProteinGI);
+            //}
+            //catch
+            //{ 
+
+
+
+            //-----------------------------------
+            //DO.Protein p = dl.GetALLProtein().ToList()[12];
+            //        for (int i = 0; i < p.Sequence.Length - 4; i++)
+            //        {
+            //            pent.Sequence = p.Sequence.Substring(i, 5);
+            //            pent.ProteinName = p.ProteinName;
+            //            pent.ProteinGI = p.ProteinGI;
+            //            pent.FirstIndex = i;
+            //            pent.LastIndex = i + 4;
+            //            dl.AddPentamer(pent);
+            //        }
+
+
+
+
+
+            //-----------------------------
+            DO.VirtualSequence V = new DO.VirtualSequence();
+            foreach(DO.Pentamer p in dl.GetAllPentamer())
             {
-                Console.WriteLine("             new Pentamer");
-                Console.WriteLine("              {");
-                Console.WriteLine("                 FirstIndex=" + i + ",");
-                Console.WriteLine("                 LastIndex=" + (i + 4) + ",");
-                Console.WriteLine("                 ProteinName =  \"RPGF1_HUMAN \" " + ",");
-                Console.WriteLine("                 ProteinGI = \"13905\"" + ",");
-                Console.WriteLine("                 Sequence =\"" + str.Substring(i, 5) + "\"" + ",");
-                Console.WriteLine("            },");
+                try
+                {
+                    V.Sequence = p.Sequence;
+                    V.Size = 5;
+                    dl.AddVirtualSequence(V);
+                }
+                catch { }
             }
+
+
+
+
+
+
+
+            //}
+
+
+
+
+            //string str = "MDTDSQRSHLSSFTMKLMDKFHSPKIKRTPSKKGKPAEVSVKIPEKPVNKEATDRFLPEGYPLPLDLEQQAVEFMSTSAVASRSQRQKNLSWLEEKEKEVVSALRYFKTIVDKMAIDKKVLEMLPGSASKVLEAILPLVQNDPRIQHSSALSSCYSRVYQSLANLIRWSDQVMLEGVNSEDKEMVTTVKGVIKAVLDGVKELVRLTIEKQGRPSPTSPVKPSSPASKPDGPAELPLTDREVEILNKTTGMSQSTELLPDATDEEVAPPKPPLPGIRVVDNSPPPALPPKKRQSAPSPTRVAVVAPMSRATSGSSLPVGINRQDFDVDCYAQRRLSGGSHSYGGESPRLSPCSSIGKLSKSDEQLSSLDRDSGQCSRNTSCETLDHYDPDYEFLQQDLSNADQIPQQTAWNLSPLPESLGESGSPFLGPPFQLPLGGHPQPDGPLAPGQQTDTPPALPEKKRRSAASQTADGSGCRVSYERHPSQYDNISGEDLQSTAPIPSVPYAPFAAILPFQHGGSSAPVEFVGDFTAPESTGDPEKPPPLPEKKNKHMLAYMQLLEDYSEPQPSMFYQTPQNEHIYQQKNKLLMEVYGFSDSFSGVDSVQELAPPPALPPKQRQLEPPAGKDGHPRDPSAVSGVPGKDSRDGSERAPKSPDALESAQSEEEVDELSLIDHNEIMSRLTLKQEGDDGPDVRGGSGDILLVHATETDRKDLVLYCEAFLTTYRTFISPEELIKKLQYRYEKFSPFADTFKKRVSKNTFFVLVRVVDELCLVELTEEILKLLMELVFRLVCNGELSLARVLRKNILDKVDQKKLLRCATSSQPLAARGVAARPGTLHDFHSHEIAEQLTLLDAELFYKIEIPEVLLWAKEQNEEKSPNLTQFTEHFNNMSYWVRSIIMLQEKAQDRERLLLKFIKIMKHLRKLNNFNSYLAILSALDSAPIRRLEWQKQTSEGLAEYCTLIDSSSSFRAYRAALSEVEPPCIPYLGLILQDLTFVHLGNPDYIDGKVNFSKRWQQFNILDSMRCFQQAHYDMRRNDDIINFFNDFSDHLAEEALWELSLKIKPRNITRRKTDREEKT";
+            //for (int i = 0; i < str.Length-4; i++)
+            //{
+            //    Console.WriteLine("             new Pentamer");
+            //    Console.WriteLine("              {");
+            //    Console.WriteLine("                 FirstIndex=" + i + ",");
+            //    Console.WriteLine("                 LastIndex=" + (i + 4) + ",");
+            //    Console.WriteLine("                 ProteinName =  \"RPGF1_HUMAN \" " + ",");
+            //    Console.WriteLine("                 ProteinGI = \"13905\"" + ",");
+            //    Console.WriteLine("                 Sequence =\"" + str.Substring(i, 5) + "\"" + ",");
+            //    Console.WriteLine("            },");
+            //}
 
         }
         //static void Main(string[] args)

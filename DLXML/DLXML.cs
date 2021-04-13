@@ -23,9 +23,9 @@ namespace DL
         #endregion
 
         #region DS XML Files
-        string ListPentamersPath = @" ListPentamersXml.xml"; //XMLSerializer
-        string ListProteinsPath = @"ListProteinsXml.xml"; //XMLSerializer
-        string ListVirthualSequencesPath = @"ListVirthualSequencesXml.xml"; //XMLSerializer
+        string ListPentamersPath = @"ListOfPentamersXml.xml"; //XMLSerializer
+        string ListProteinsPath = @"ListOfProteinsXml.xml"; //XMLSerializer
+        string ListVirthualSequencesPath = @"ListOfVSXml.xml"; //XMLSerializer
         #endregion
 
         #region Protein
@@ -105,12 +105,12 @@ namespace DL
                              select s).FirstOrDefault();
             if (find != null) //If we already have such Adjacent Stations in the list of Adjacent Stations
                 throw new BadProteinException(protein.ProteinGI, protein.ProteinName, "Duplicate protein");
-            XElement toAdd = new XElement("protein",
+            XElement toAdd = new XElement("Protein",
                                   new XElement("ProteinGI", protein.ProteinGI),
                                   new XElement("ProteinName", protein.ProteinName),
                                   new XElement("Sequence", protein.Sequence));
 
-            ListProteins.Add(protein);//add Adjacent Stations to the collection of all Adjacent Stations
+            ListProteins.Add(toAdd);//add Adjacent Stations to the collection of all Adjacent Stations
             XMLTool.SaveListToXMLElement(ListProteins, ListProteinsPath);
         }
 
@@ -136,10 +136,14 @@ namespace DL
         /// <returns>a collection of all Adjacent Stations with this code station</returns>
         public IEnumerable<DO.Protein> GetALLProtein()
         {
-            XElement ListProtein = XMLTool.LoadListFromXMLElement(ListProteinsPath);
-            return from item in ListProtein.Elements()
-                   select fromXmlToProtein(item);
+
+            List<DO.Protein> ListProtein = XMLTool.LoadListFromXMLSerializer<DO.Protein>(ListProteinsPath);
+            return from p in ListProtein
+                   select p;
         }
+
+
+      
 
         #endregion
 
@@ -259,12 +263,15 @@ namespace DL
         /// <param name="num">num of line</param>
         /// <param name="code">runing code of line</param>
         /// <returns>a line that have this code and num line</returns>
-        public DO.Pentamer GetPentamerByProteinGI(string ProteinGI)
+        public IEnumerable <DO.Pentamer> GetPentamerByProteinGI(string ProteinGI)
         {
-            List<Pentamer> ListPentamers = XMLTool.LoadListFromXMLSerializer<Pentamer>(ListPentamersPath);
-            DO.Pentamer toGet = ListPentamers.Find(p => (p.ProteinGI == ProteinGI)); //find this line
-            if (toGet != null) //if the line is found
-                return toGet;
+            List<DO.Pentamer> ListPentamers = XMLTool.LoadListFromXMLSerializer<Pentamer>(ListPentamersPath);
+            List<DO.Pentamer> ListPentamerstoget = (from p in ListPentamers
+                                                where p.ProteinGI == ProteinGI
+                                                select p).ToList();
+           
+            if (ListPentamerstoget.Count != 0) //if the line is found
+                return ListPentamerstoget;
             else //if the line is not found 
                 throw new DO.BadPentamerProteinGIException(ProteinGI, "Not found");
         }
