@@ -67,39 +67,20 @@ namespace BL
         //    }
         //}
         public IEnumerable<BO.Pentamer> GetAllPentamer()
-        {
-             
+        {    
             return from item in dl.GetAllPentamer()
                    select PentamerDoBoAdapter(item);
         }
          
-        public BO.Pentamer GetPentamerByProteinGI(string ProteinGI)
+        public IEnumerable<BO.Pentamer> GetPentamerByProteinGI(string ProteinGI)
         {
-
-            DO.Pentamer PentamerDO;
-            try
-            {
-                PentamerDO = dl.GetPentamerByProteinGI(ProteinGI );
-            }
-            catch (DO.BadPentamerProteinGIException ex)
-            {
-                throw new BO.BadPentamerProteinGIException(" Pentamer does not exist", ex);
-            }
-            return PentamerDoBoAdapter(PentamerDO);
-             
+                return (from item in dl.GetPentamerByProteinGI(ProteinGI)
+                select PentamerDoBoAdapter(item));
         }
-        public BO.Pentamer GetPentamerByProteinName(string ProteinName)
+        public IEnumerable<BO.Pentamer> GetPentamerByProteinName(string ProteinName)
         {
-            DO.Pentamer PentamerDO;
-            try
-            {
-                PentamerDO = dl.GetPentamerByProteinName(ProteinName);
-            }
-            catch (DO.BadPentamerProteinNameException ex)
-            {
-                throw new BO.BadPentamerProteinNameException(" Pentamer does not exist", ex);
-            }
-            return PentamerDoBoAdapter(PentamerDO);
+            return from item in dl.GetPentamerByProteinName(ProteinName)
+                   select PentamerDoBoAdapter(item);
              
         }
         public BO.Pentamer GetPentamerBySequence(string Sequence)
@@ -159,7 +140,7 @@ namespace BL
 
 
         #region Protein
-        BO.Protein proteinDoBoAdapter(DO.Protein DOProtein)
+        public BO.Protein proteinDoBoAdapter(DO.Protein DOProtein)
         {
             BO.Protein BOProtein = new BO.Protein();
             DOProtein.CopyPropertiesTo(BOProtein);
@@ -265,7 +246,7 @@ namespace BL
             
         }
          
-        public IEnumerable<DO.Protein> GetALLProtein()
+        public IEnumerable<BO.Protein> GetALLProtein()
         {
             return from item in dl.GetALLProtein()
                    select proteinDoBoAdapter(item);
@@ -287,7 +268,7 @@ namespace BL
         }
 
 
-        BO.VirtualSequence VirtualSequenceDoBoAdapter(DO.VirtualSequence DOVS)
+        public BO.VirtualSequence VirtualSequenceDoBoAdapter(DO.VirtualSequence DOVS)
         {
             BO.VirtualSequence BOVS = new BO.VirtualSequence();
             DOVS.CopyPropertiesTo(BOVS);
@@ -342,7 +323,7 @@ namespace BL
             
         }
         
-        public IEnumerable<DO.VirtualSequence> GetALLVirtualSequencesBySize(int size)
+        public IEnumerable<BO.VirtualSequence> GetALLVirtualSequencesBySize(int size)
         {
             return (from item in dl.GetALLVirtualSequencesBySize(size)
                     orderby item.Sequence
