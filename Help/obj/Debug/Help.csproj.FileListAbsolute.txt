@@ -22,3 +22,5 @@ C:\Users\user\source\repos\Bioinformatics-project\Help\obj\Debug\Help.csproj.Cor
 C:\Users\user\source\repos\Bioinformatics-project\Help\obj\Debug\Help.csproj.CopyComplete
 C:\Users\user\source\repos\Bioinformatics-project\Help\obj\Debug\Help.exe
 C:\Users\user\source\repos\Bioinformatics-project\Help\obj\Debug\Help.pdb
+C:\dotNet5781_XX_8113_5037\ntgalili\Bioinformatics-project\Help\obj\Debug\Help.exe
+C:\dotNet5781_XX_8113_5037\ntgalili\Bioinformatics-project\Help\obj\Debug\Help.pdb

@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\dotNet5781_XX_8113_5037\ntgalili\Bioinformatics-project\PL\App.xaml
-31158775033
+5518651158
 
-8765776332
+91769152395
 14731121770
-MainWindow.xaml;ResultWindow.xaml;searchWindow.xaml;
+DetailsWindow.xaml;MainWindow.xaml;ResultWindow.xaml;searchWindow.xaml;VirtualSequenceWindow.xaml;
 
-True
+False
 

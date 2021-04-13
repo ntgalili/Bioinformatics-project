@@ -12,3 +12,5 @@ C:\Users\user\source\repos\Bioinformatics-project\DLObject\obj\Debug\DLObject.cs
 C:\Users\user\source\repos\Bioinformatics-project\DLObject\obj\Debug\DLObject.csproj.CopyComplete
 C:\Users\user\source\repos\Bioinformatics-project\DLObject\obj\Debug\DLObject.dll
 C:\Users\user\source\repos\Bioinformatics-project\DLObject\obj\Debug\DLObject.pdb
+C:\dotNet5781_XX_8113_5037\ntgalili\Bioinformatics-project\DLObject\obj\Debug\DLObject.dll
+C:\dotNet5781_XX_8113_5037\ntgalili\Bioinformatics-project\DLObject\obj\Debug\DLObject.pdb

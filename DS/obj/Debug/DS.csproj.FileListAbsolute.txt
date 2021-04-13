@@ -12,3 +12,5 @@ C:\Users\user\source\repos\Bioinformatics-project\DS\obj\Debug\DS.csproj.CoreCom
 C:\Users\user\source\repos\Bioinformatics-project\DS\obj\Debug\DS.csproj.CopyComplete
 C:\Users\user\source\repos\Bioinformatics-project\DS\obj\Debug\DS.dll
 C:\Users\user\source\repos\Bioinformatics-project\DS\obj\Debug\DS.pdb
+C:\dotNet5781_XX_8113_5037\ntgalili\Bioinformatics-project\DS\obj\Debug\DS.dll
+C:\dotNet5781_XX_8113_5037\ntgalili\Bioinformatics-project\DS\obj\Debug\DS.pdb
