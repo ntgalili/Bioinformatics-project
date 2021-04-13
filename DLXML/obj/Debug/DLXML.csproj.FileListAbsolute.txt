@@ -34,3 +34,8 @@ C:\Users\הדסי\source\repos\Bioinformatics-project\DLXML\obj\Debug\DLXML.cspr
 C:\Users\הדסי\source\repos\Bioinformatics-project\DLXML\obj\Debug\DLXML.csproj.CopyComplete
 C:\Users\הדסי\source\repos\Bioinformatics-project\DLXML\obj\Debug\DLXML.exe
 C:\Users\הדסי\source\repos\Bioinformatics-project\DLXML\obj\Debug\DLXML.pdb
+C:\dotNet5781_XX_8113_5037\ntgalili\Bioinformatics-project\DLXML\obj\Debug\DLXML.exe
+C:\dotNet5781_XX_8113_5037\ntgalili\Bioinformatics-project\DLXML\obj\Debug\DLXML.pdb
+C:\Users\user\source\repos\Bioinformatics-project\bin\DLXML.exe.config
+C:\Users\user\source\repos\Bioinformatics-project\bin\DLXML.exe
+C:\Users\user\source\repos\Bioinformatics-project\bin\DLXML.pdb

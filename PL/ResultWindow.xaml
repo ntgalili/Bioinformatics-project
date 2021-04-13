@@ -9,8 +9,8 @@
         Title="ResultWindow" Height="673.648" Width="1218.605">
 
     <Grid >
-        <Label Content="Result" HorizontalAlignment="Left" Margin="52,21,0,0" VerticalAlignment="Top" Height="43" Width="253"/>
-        <TextBox x:Name="seqtextBox" HorizontalAlignment="Left" Height="95" Margin="52,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1097"/>
+        <Label Content="Result" HorizontalAlignment="Left" Margin="52,21,0,0" VerticalAlignment="Top" Height="43" Width="253" Background="White"/>
+        <TextBox x:Name="seqtextBox" HorizontalAlignment="Left" Height="95" Margin="52,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1097" IsReadOnly="True" />
 
         <DataGrid x:Name="UniqueDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Margin="113,197,128,284" RowDetailsVisibilityMode="VisibleWhenSelected">
             <DataGrid.Columns>

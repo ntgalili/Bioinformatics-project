@@ -26,7 +26,26 @@ namespace PL
             InitializeComponent();
             SemiUniqueDataGrid.DataContext = SemiUnique;
             UniqueDataGrid.DataContext = Unique;
-            seqtextBox.DataContext = p.Sequence;
+            seqtextBox.Text = p.Sequence;
+            //richTextBox1.SelectionStart = wordstartIndex;
+            //richTextBox1.SelectionLength = word.Length;
+            //richTextBox1.SelectionBackColor = Color.Yellow;
+            foreach(BO.Pentamer pentamer in SemiUnique)
+            {
+                seqtextBox.SelectionStart = pentamer.FirstIndex;
+                seqtextBox.SelectionLength = pentamer.Sequence.Length;
+                //seqtextBox.SelectionTextBrush = Color.FromScRgb(100,32,77,212);
+                //#FF1B5AA8;
+                seqtextBox.SelectionBrush =new SolidColorBrush(Color.FromScRgb(100, 32, 77, 212));
+            }
+            foreach (BO.Pentamer pentamer in Unique)
+            {
+                seqtextBox.SelectionStart = pentamer.FirstIndex;
+                seqtextBox.SelectionLength = pentamer.Sequence.Length;
+                //seqtextBox.SelectionTextBrush = Color.FromScRgb(100,32,77,212);
+                //#FF1B5AA8;
+                seqtextBox.SelectionBrush = new SolidColorBrush(Color.FromScRgb(100, 238, 0, 0));
+            }
         }
 
        

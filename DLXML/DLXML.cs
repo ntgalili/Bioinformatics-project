@@ -275,10 +275,12 @@ namespace DL
             else //if the line is not found 
                 throw new DO.BadPentamerProteinGIException(ProteinGI, "Not found");
         }
-        public DO.Pentamer GetPentamerByProteinName(string ProteinName)
+        public IEnumerable<DO.Pentamer> GetPentamerByProteinName(string ProteinName)
         {
             List<Pentamer> ListPentamers = XMLTool.LoadListFromXMLSerializer<Pentamer>(ListPentamersPath);
-            DO.Pentamer toGet = ListPentamers.Find(p => (p.ProteinName == ProteinName)); //find this line
+            List<DO.Pentamer> toGet = (from p in ListPentamers
+                                       where p.ProteinName == ProteinName
+                                       select p).ToList();
             if (toGet != null) //if the line is found
                 return toGet;
             else //if the line is not found 
