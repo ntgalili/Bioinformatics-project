@@ -13,3 +13,4 @@ C:\dotNet5781_XX_8113_5037\ntgalili\Bioinformatics-project\DLAPI\obj\Debug\DLAPI
 C:\dotNet5781_XX_8113_5037\ntgalili\Bioinformatics-project\DLAPI\obj\Debug\DLAPI.csproj.CoreCompileInputs.cache
 C:\dotNet5781_XX_8113_5037\ntgalili\Bioinformatics-project\DLAPI\obj\Debug\DLAPI.dll
 C:\dotNet5781_XX_8113_5037\ntgalili\Bioinformatics-project\DLAPI\obj\Debug\DLAPI.pdb
+C:\Users\user\source\repos\Bioinformatics-project\DLAPI\obj\Debug\DLAPI.csprojAssemblyReference.cache
