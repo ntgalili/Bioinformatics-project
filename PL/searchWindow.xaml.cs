@@ -19,21 +19,24 @@ namespace PL
     /// </summary>
     public partial class searchWindow : Window
     {
-        List<BO.Pentamer> Unique=new List<BO.Pentamer>();
-        List<BO.Pentamer> SemiUnique = new List<BO.Pentamer>();
+        List<BO.Pentamer> Unique;
+        List<BO.Pentamer> SemiUnique;
         IBL bl;
         public searchWindow(IBL _bl)
         {
             InitializeComponent();
             bl = _bl;
+
         }
         public void Cut(BO.Protein protein)
         {
             BO.Pentamer pnta;
             BO.UniquenessTest result;
-
+            Unique= new List<BO.Pentamer>();
+            SemiUnique=new List<BO.Pentamer> ();
             for (int i = 0; i < protein.Sequence.Length - 4; i++)
             {
+
                 pnta = new BO.Pentamer();
                 pnta.Sequence = protein.Sequence.Substring(i, 5);
                 pnta.ProteinGI = protein.ProteinGI;

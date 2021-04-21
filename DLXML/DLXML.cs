@@ -332,7 +332,7 @@ namespace DL
             List<Pentamer> ListPentamers = XMLTool.LoadListFromXMLSerializer<Pentamer>(ListPentamersPath);
 
            return from P in ListPentamers
-            where P.Sequence == pntaDO.Sequence && P.ProteinGI == pntaDO.ProteinGI && P.FirstIndex == pntaDO.FirstIndex
+                  where P.Sequence == pntaDO.Sequence 
                   select P;
         }
         #endregion
