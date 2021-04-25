@@ -26,25 +26,51 @@ namespace PL
             InitializeComponent();
             SemiUniqueDataGrid.DataContext = SemiUnique;
             UniqueDataGrid.DataContext = Unique;
-            seqtextBox.Text = p.Sequence;
+            seqtextBox.AppendText( p.Sequence);
             //richTextBox1.SelectionStart = wordstartIndex;
             //richTextBox1.SelectionLength = word.Length;
             //richTextBox1.SelectionBackColor = Color.Yellow;
-            foreach(BO.Pentamer pentamer in SemiUnique)
+            foreach (BO.Pentamer pentamer in SemiUnique)
             {
-                seqtextBox.SelectionStart = pentamer.FirstIndex;
-                seqtextBox.SelectionLength = pentamer.Sequence.Length;
-                //seqtextBox.SelectionTextBrush = Color.FromScRgb(100,32,77,212);
-                //#FF1B5AA8;
-                seqtextBox.SelectionBrush =new SolidColorBrush(Color.FromScRgb(100, 32, 77, 212));
+                Colorize(pentamer.FirstIndex, pentamer.Sequence.Length, Colors.Blue);
+                
             }
             foreach (BO.Pentamer pentamer in Unique)
             {
-                seqtextBox.SelectionStart = pentamer.FirstIndex;
-                seqtextBox.SelectionLength = pentamer.Sequence.Length;
-                //seqtextBox.SelectionTextBrush = Color.FromScRgb(100,32,77,212);
-                //#FF1B5AA8;
-                seqtextBox.SelectionBrush = new SolidColorBrush(Color.FromScRgb(100, 238, 0, 0));
+                Colorize(pentamer.FirstIndex, pentamer.Sequence.Length, Colors.Red);
+            }
+            TextPointer GetPoint(TextPointer start, int x)
+            {
+                var ret = start;
+                var i = 0;
+                while (i < x && ret != null)
+                {
+                    if (ret.GetPointerContext(LogicalDirection.Backward) ==
+            TextPointerContext.Text ||
+                        ret.GetPointerContext(LogicalDirection.Backward) ==
+            TextPointerContext.None)
+                        i++;
+                    if (ret.GetPositionAtOffset(1,
+            LogicalDirection.Forward) == null)
+                        return ret;
+                    ret = ret.GetPositionAtOffset(1,
+            LogicalDirection.Forward);
+                }
+                return ret;
+            }
+
+
+
+            void Colorize(int offset, int length, Color color)
+            {
+                var textRange = seqtextBox.Selection;
+                var start = seqtextBox.Document.ContentStart;
+                var startPos = GetPoint(start, offset);
+                var endPos = GetPoint(start, offset + length);
+
+                textRange.Select(startPos, endPos);
+                textRange.ApplyPropertyValue(TextElement.ForegroundProperty, new SolidColorBrush(color));
+                textRange.ApplyPropertyValue(TextElement.FontWeightProperty, FontWeights.Bold);
             }
         }
 

@@ -19,7 +19,7 @@ namespace PL
     /// </summary>
     public partial class searchWindow : Window
     {
-        List<BO.Pentamer> Unique=new List<BO.Pentamer>();
+        List<BO.Pentamer> Unique = new List<BO.Pentamer>();
         List<BO.Pentamer> SemiUnique = new List<BO.Pentamer>();
         IBL bl;
         public searchWindow(IBL _bl)
@@ -31,7 +31,8 @@ namespace PL
         {
             BO.Pentamer pnta;
             BO.UniquenessTest result;
-
+            Unique = new List<BO.Pentamer>();
+            SemiUnique = new List<BO.Pentamer>();
             for (int i = 0; i < protein.Sequence.Length - 4; i++)
             {
                 pnta = new BO.Pentamer();

@@ -14,3 +14,8 @@ C:\Users\user\source\repos\Bioinformatics-project\DLObject\obj\Debug\DLObject.dl
 C:\Users\user\source\repos\Bioinformatics-project\DLObject\obj\Debug\DLObject.pdb
 C:\dotNet5781_XX_8113_5037\ntgalili\Bioinformatics-project\DLObject\obj\Debug\DLObject.dll
 C:\dotNet5781_XX_8113_5037\ntgalili\Bioinformatics-project\DLObject\obj\Debug\DLObject.pdb
+C:\dotNet5781_XX_8113_5037\ntgalili\Bioinformatics-project\bin\DLObject.dll
+C:\dotNet5781_XX_8113_5037\ntgalili\Bioinformatics-project\bin\DLObject.pdb
+C:\dotNet5781_XX_8113_5037\ntgalili\Bioinformatics-project\DLObject\obj\Debug\DLObject.csprojAssemblyReference.cache
+C:\dotNet5781_XX_8113_5037\ntgalili\Bioinformatics-project\DLObject\obj\Debug\DLObject.csproj.CoreCompileInputs.cache
+C:\dotNet5781_XX_8113_5037\ntgalili\Bioinformatics-project\DLObject\obj\Debug\DLObject.csproj.CopyComplete
