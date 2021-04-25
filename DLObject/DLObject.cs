@@ -11,7 +11,7 @@ using DS;
 
 namespace DL
 {
-    sealed class DLObject : IDL    //internal
+    sealed class DLObject    //internal
 
     {
         #region singelton
@@ -37,15 +37,37 @@ namespace DL
                    orderby item.ProteinName
                    select item.Clone();
         }
+        public IEnumerable<DO.Pentamer> GetPentamersByGI(string S)
+        {
+            return null;
+        }
 
         public DO.Pentamer GetPentamerBySequence(string str)
         {
             return null;
         }
+
         #endregion
 
 
         #region Protein
+        DO.Protein GetProtein(string ProteinGI, string ProteinName)
+        {
+            return null;
+        }
+
+        void AddProtein(DO.Protein protein)
+        {
+
+        }
+        void DeleteProtein(string ProteinGI, string ProteinName)
+        {
+
+        }
+        IEnumerable<DO.Protein> GetALLProtein()
+        {
+            return null;
+        }
         public DO.Protein GetProteinBySequence(string str)
         {
             return (DataSource.ListOfProteins.FirstOrDefault(p => p.Sequence == str)).Clone();
@@ -58,6 +80,7 @@ namespace DL
         {
             return (DataSource.ListOfProteins.FirstOrDefault(p => p.ProteinGI.Equals(numOfGI))).Clone();
         }
+
         #endregion
 
 
@@ -70,6 +93,23 @@ namespace DL
                     orderby item.Sequence
                     select item.Clone());
         }
+        DO.VirtualSequence GetVirtualSequence(string Sequence)
+        {
+            return null;
+        }
+        void AddVirtualSequence(DO.VirtualSequence VirtualSequence)
+        {
+
+        }
+        void DeleteVirtualSequence(string Sequence)
+        {
+
+        }
+        IEnumerable<DO.VirtualSequence> GetALLVirtualSequencesBySize(int size)
+        {
+            return null;
+        }
+
         #endregion
     }
 }

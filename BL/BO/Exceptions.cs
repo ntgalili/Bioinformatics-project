@@ -48,7 +48,7 @@ namespace BO
 
     public class BadPentamerException : Exception
     {
-        public BadPentamerException(string message) : base() { }
+        public BadPentamerException(string message, Exception ex) : base() { }
         public override string ToString() => base.ToString() + $", bad Pentamer";
     }
     //[Serializable]
@@ -65,4 +65,11 @@ namespace BO
     //    public override string ToString() => base.ToString() + $", bad student id: {personID} and course ID: {courseID}";
     //}
 
+    public class BadVirtualSequenceException : Exception
+    {
+        public BadVirtualSequenceException(string message1, Exception message2) : base() { }
+        public override string ToString() => base.ToString() + $", bad Pentamer";
+    }
+    
 }
+

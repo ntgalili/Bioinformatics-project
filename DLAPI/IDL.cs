@@ -35,7 +35,7 @@ namespace DLAPI
         IEnumerable<DO.Pentamer> GetAllPentamer();
         IEnumerable<DO.Pentamer> GetPentamersBySequence(string sequence);
         IEnumerable<DO.Pentamer> GetPentamerByProteinGI(string ProteinGI);
-        DO.Pentamer GetPentamerByProteinName(string ProteinName);
+        IEnumerable<DO.Pentamer> GetPentamerByProteinName(string ProteinName);
         DO.Pentamer GetPentamerBySequence(string Sequence);
         void AddPentamer(DO.Pentamer pentamer);
         void DeletePentamer(string proteinGI, string sequence, int firstIndex);

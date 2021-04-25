@@ -46,7 +46,7 @@ namespace DLAPI
             }
             catch (Exception ex)
             {
-                throw new DLConfigException($"Failed loading {dlPackageName}.dll", ex);
+              //  throw new DLConfigException($"Failed loading {dlPackageName}.dll", ex);
             }
 
             // Get concrete Dal implementation's class metadata object

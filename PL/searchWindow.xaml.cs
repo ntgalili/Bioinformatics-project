@@ -66,6 +66,7 @@ namespace PL
             Cut(p);
             ResultWindow win = new ResultWindow(bl,p, Unique, SemiUnique);
             win.ShowDialog();
+            seqTextBox.Text = null;
         }
     }
 }
