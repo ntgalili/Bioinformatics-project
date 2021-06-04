@@ -29,7 +29,7 @@ namespace BLAPI
         #region Protein
         BO.Protein GetProteinBySequence(string str);
         BO.Protein GetProteinByName(string name);
-        BO.Protein GetProteinByGI(int numOfGI);
+        BO.Protein GetProteinByGI(string numOfGI);
         BO.Protein GetProtein(string ProteinGI, string ProteinName);
         void AddProtein(BO.Protein protein);
         void DeleteProtein(string ProteinGI, string ProteinName);

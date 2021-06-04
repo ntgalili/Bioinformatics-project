@@ -17,6 +17,7 @@ namespace BO
             base(message, innerException) => IG = ((DO.BadProteinException)innerException).IG;
         public BadProteinException(string s1, string message) :
             base(message) => str1 = s1;
+
         public override string ToString() => base.ToString() + $",  Bad Protein IG: {IG}";
    
     }

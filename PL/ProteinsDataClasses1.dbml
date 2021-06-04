@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="PentamerDataBase" Class="ProteinsDataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-O6INSSA;Initial Catalog=PentamerDataBase;Integrated Security=True" SettingsObjectName="PL.Properties.Settings" SettingsPropertyName="PentamerDataBaseConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.proteinsTable" Member="proteinsTables">
+    <Type Name="proteinsTable">
+      <Column Name="ProteinGI" Type="System.String" DbType="NChar(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ProteinName" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Sequence" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+</Database>

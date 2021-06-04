@@ -22,12 +22,8 @@ C:\Users\הדסי\source\repos\Bioinformatics-project\DLXML\bin\Debug\DLXML.pdb
 C:\Users\הדסי\source\repos\Bioinformatics-project\DLXML\bin\Debug\DLAPI.dll
 C:\Users\הדסי\source\repos\Bioinformatics-project\DLXML\bin\Debug\DLAPI.pdb
 C:\Users\הדסי\source\repos\Bioinformatics-project\DLXML\obj\Debug\DLXML.csprojAssemblyReference.cache
-C:\Users\הדסי\source\repos\Bioinformatics-project\DLXML\obj\Debug\MainWindow.g.cs
 C:\Users\הדסי\source\repos\Bioinformatics-project\DLXML\obj\Debug\App.g.cs
 C:\Users\הדסי\source\repos\Bioinformatics-project\DLXML\obj\Debug\DLXML_MarkupCompile.cache
-C:\Users\הדסי\source\repos\Bioinformatics-project\DLXML\obj\Debug\DLXML_MarkupCompile.lref
-C:\Users\הדסי\source\repos\Bioinformatics-project\DLXML\obj\Debug\MainWindow.baml
-C:\Users\הדסי\source\repos\Bioinformatics-project\DLXML\obj\Debug\DLXML.g.resources
 C:\Users\הדסי\source\repos\Bioinformatics-project\DLXML\obj\Debug\DLXML.Properties.Resources.resources
 C:\Users\הדסי\source\repos\Bioinformatics-project\DLXML\obj\Debug\DLXML.csproj.GenerateResource.cache
 C:\Users\הדסי\source\repos\Bioinformatics-project\DLXML\obj\Debug\DLXML.csproj.CoreCompileInputs.cache
@@ -53,3 +49,6 @@ C:\dotNet5781_XX_8113_5037\ntgalili\Bioinformatics-project\DLXML\obj\Debug\DLXML
 C:\dotNet5781_XX_8113_5037\ntgalili\Bioinformatics-project\DLXML\obj\Debug\DLXML.csproj.GenerateResource.cache
 C:\dotNet5781_XX_8113_5037\ntgalili\Bioinformatics-project\DLXML\obj\Debug\DLXML.csproj.CoreCompileInputs.cache
 C:\dotNet5781_XX_8113_5037\ntgalili\Bioinformatics-project\DLXML\obj\Debug\DLXML.csproj.CopyComplete
+C:\Users\הדסי\source\repos\Bioinformatics-project\bin\DLXML.exe.config
+C:\Users\הדסי\source\repos\Bioinformatics-project\bin\DLXML.exe
+C:\Users\הדסי\source\repos\Bioinformatics-project\bin\DLXML.pdb

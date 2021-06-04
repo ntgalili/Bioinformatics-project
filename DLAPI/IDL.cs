@@ -13,10 +13,10 @@ namespace DLAPI
     public interface IDL
     {
         #region Protein
-        DO.Protein GetProtein(string ProteinGI, string ProteinName);
+       // DO.Protein GetProtein(string ProteinGI, string ProteinName);
         DO.Protein GetProteinBySequence(string sequence);
         DO.Protein GetProteinByName(string name);
-        DO.Protein GetProteinByGI(int numOfGI);
+        DO.Protein GetProteinByGI(string numOfGI);
         void AddProtein(DO.Protein protein);
         void DeleteProtein(string ProteinGI, string ProteinName);
         IEnumerable<DO.Protein> GetALLProtein();

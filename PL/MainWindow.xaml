@@ -5,10 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PL"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Style="{DynamicResource windowStyle}">
     <Grid>
-        <Button Content="VSwindow" HorizontalAlignment="Left" Margin="143,329,0,0" VerticalAlignment="Top" Width="159" Height="38" Click="Button_Click"/>
-        <Button Content="search" HorizontalAlignment="Left" Margin="413,326,0,0" VerticalAlignment="Top" Width="113" Height="41" Click="Button_Click_1"/>
+        <Grid>
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF3D3131" Offset="0"/>
+                    <GradientStop Color="#FF3D3131" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.RowDefinitions>
 
+
+                <RowDefinition Height="51*"/>
+                <RowDefinition Height="31*"/>
+                <RowDefinition Height="196*"/>
+                <RowDefinition Height="62*"/>
+                <RowDefinition Height="65.6"/>
+                <RowDefinition Height="14*"/>
+
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="200*"/>
+                <ColumnDefinition Width="200*"/>
+                <ColumnDefinition Width="200*"/>
+                <ColumnDefinition Width="20"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Content="VSwindow" FontSize="16" Margin="10,10.2,10.2,0" VerticalAlignment="Top" Height="45" Click="Button_Click" Grid.Column="1" Grid.Row="4" />
+            <Button Content="search" FontSize="16" HorizontalAlignment="Left" Margin="9.8,10.2,0,0" VerticalAlignment="Top"  Width="231" Height="45" Click="Button_Click_1" Grid.Column="2" Grid.Row="4"/>
+            <Button Content="proteins" HorizontalAlignment="Left" Margin="9.6,10.2,0,0" VerticalAlignment="Top" Width="232" Height="45" Click="Button_Click_2" Grid.Row="4" Grid.Column="3" FontSize="16"/>
+            <Label Content="Wellcome To " Grid.Column="1" HorizontalAlignment="Center" Margin="251,0,0.4,186.4" VerticalAlignment="Bottom" Grid.ColumnSpan="2" Height="41" Width="251" FontSize="20" Grid.RowSpan="3" FontWeight="Normal" Foreground="#FFFF8000" HorizontalContentAlignment="Center"/>
+            <Label Content=" PeptidFinder" Grid.Column="1" HorizontalAlignment="Left" Margin="10,0,0,40.4" VerticalAlignment="Bottom" Grid.ColumnSpan="3" Height="146" Width="734" FontSize="100" Grid.Row="2" Foreground="#FF00FFF1" FontWeight="Bold" />
+        </Grid>
     </Grid>
 </Window>

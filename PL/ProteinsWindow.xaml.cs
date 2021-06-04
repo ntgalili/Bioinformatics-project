@@ -1,5 +1,4 @@
-﻿using BLAPI;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -18,47 +17,49 @@ using System.Windows.Shapes;
 namespace PL
 {
     /// <summary>
-    /// Interaction logic for DetailsWindow.xaml
+    /// Interaction logic for ProteinsWindow.xaml
     /// </summary>
-    public partial class DetailsWindow : Window
+    public partial class ProteinsWindow : Window
     {
-        IBL bl;
-        BO.VirtualSequence vs;
+        //ProteinsDataClasses1DataContext dc = new ProteinsDataClasses1DataContext(
+        //  Properties.Settings.Default.PentamerDataBaseConnectionString);
+         private DataTable dataTable = new DataTable();
 
-        public DetailsWindow(string seq)
+
+        public ProteinsWindow()
         {
             InitializeComponent();
-            //bl = _bl;
-            //vs = _vs;
+            //if (dc.DatabaseExists())
+            //    proteinDataGrid.ItemsSource = dc.proteinsTables;
 
-            seqLable.Content = seq;
+
+
+
             //using (SqlConnection conn = new SqlConnection())
             {
+                //conn.ConnectionString = @"Server= DESKTOP-O6INSSA; Database=PentamerDataBase ;Trusted_Connection=true";
+                //conn.Open();
+                //SqlCommand command = new SqlCommand("SELECT * FROM proteinsTable", conn);
+
+
 
 
                 string connString = @"Server= DESKTOP-O6INSSA; Database=PentamerDataBase ;Trusted_Connection=true";
-                string query = "SELECT* FROM pentamersTable2 WHERE Sequence LIKE '"+ seq+ "'";
+                string query = "SELECT ProteinGI, ProteinName FROM proteinsTable2 ";
 
                 SqlConnection conn = new SqlConnection(connString);
-
                 SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.CommandTimeout = 200;
                 conn.Open();
 
                 // create data adapter
-                DataTable dataTable = new DataTable();
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 // this will query your database and return the result to your datatable
                 da.Fill(dataTable);
-                pentamerDataGrid.ItemsSource = dataTable.DefaultView;
+                proteinDataGrid.ItemsSource = dataTable.DefaultView;
                 conn.Close();
                 da.Dispose();
                 conn.Close();
             }
         }
-        // pentamerDataGrid.DataContext = bl.GetPentamersBySequence(vs.Sequence);
     }
-
-
-   
 }

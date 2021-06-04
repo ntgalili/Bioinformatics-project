@@ -4,6 +4,39 @@
              xmlns:local="clr-namespace:PL"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style TargetType="Window" >
+            <Setter Property="Background" >
+                <Setter.Value>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF3D3131" Offset="0"/>
+
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Foreground"
+              Value="Black" />
+            <Setter Property="FontFamily"
+                    Value="Cooper Black" />
+            <Setter Property="FontWeight"
+              Value="Bold" />
+        </Style>
+
+        <Style TargetType="Button" >
+            <Setter Property="Background"
+              Value="#FFFF8000" />
+            <Setter Property="Foreground"
+              Value="White" />
+            <Setter Property="BorderBrush" 
+                    Value="#FFFF8000"/>
+            <Setter Property="FontFamily"
+                    Value="Cooper Black" />
+        </Style>
+
+
+        <Style TargetType="Label" >
+            <Setter Property="FontSize"
+                    Value="16"/>
+        </Style>
+        
     </Application.Resources>
 </Application>

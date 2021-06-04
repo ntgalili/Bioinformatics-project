@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ProteinsDataClasses1">
+  <DataContextMoniker Name="/ProteinsDataClasses1DataContext" />
+  <nestedChildShapes>
+    <classShape Id="6e674fb6-aa83-4cdb-a466-e1bfbaa744d8" absoluteBounds="4, 1.625, 2, 1.3862939453125">
+      <DataClassMoniker Name="/ProteinsDataClasses1DataContext/proteinsTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9d98f768-033c-4865-91f2-218d181e13d8" absoluteBounds="4.0150000000000006, 2.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

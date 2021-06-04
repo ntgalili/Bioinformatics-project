@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,6 +24,7 @@ namespace PL
         List<BO.Pentamer> Unique = new List<BO.Pentamer>();
         List<BO.Pentamer> SemiUnique = new List<BO.Pentamer>();
         IBL bl;
+        BO.Protein p = new BO.Protein();
         public searchWindow(IBL _bl)
         {
             InitializeComponent();
@@ -52,22 +55,114 @@ namespace PL
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            BO.Protein p = new BO.Protein();
-            try
+            
+           // try
             {
                 p = bl.GetProteinBySequence(seqTextBox.Text);
             }
-            catch(Exception ex)
+         //   catch (Exception ex)
             {
-                p = new BO.Protein();
-                p.Sequence = seqTextBox.Text;
-                p.ProteinGI = "";
-                p.ProteinName = "";
+                //p = new BO.Protein();
+                //p.Sequence = seqTextBox.Text;
+                //p.ProteinGI = "";
+                //p.ProteinName = "";
             }
-            Cut(p);
-            ResultWindow win = new ResultWindow(bl,p, Unique, SemiUnique);
-            win.ShowDialog();
-            seqTextBox.Text = null;
+            openReuletWin(p); 
         }
+
+
+
+
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            string name = nameTextBox.Text;
+            p = bl.GetProteinByName(name);
+            openReuletWin(p);
+
+        }
+
+
+
+        public void openReuletWin(BO.Protein p)
+        {
+            Cut(p);
+            ResultWindow win = new ResultWindow(bl, p, Unique, SemiUnique);
+            win.ShowDialog();
+            
+        }
+
+
+
+        private void GIsubButton_Click(object sender, RoutedEventArgs e)
+        {
+            string Gi = GITextBox.Text;
+            p = bl.GetProteinByGI(Gi);
+            openReuletWin(p);
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            nameTextBox.Text = null;
+            GITextBox = null;
+            seqTextBox = null;
+        }
+        /*
+using (SqlConnection connection = new SqlConnection(connetionString))
+using (SqlCommand command = new SqlCommand(queryString, connection))
+{
+connection.Open();
+using (SqlDataReader reader = command.ExecuteReader())
+{
+// Call Read before accessing data. 
+if (reader.HasRows)
+{
+  reader.Read();
+  professorId = reader.GetInt32(7);
+
+  // Call Close when done reading.
+
+}
+reader.Close();
+}*/
+
+
+
+
+
+
+        //public class PullDataTest
+        //{
+        //    // your data table
+        //    private DataTable dataTable = new DataTable();
+
+        //    public PullDataTest()
+        //    {
+        //    }
+
+        //    // your method to pull data from database to datatable   
+        //    public void PullData()
+        //    {
+        //        string connString = @"Data Source=DESKTOP-O6INSSA; Initial Catalog=PentamerDataBase; Integrated Security=true";
+
+        //        string query = "select * from pentamerTable ";
+
+        //        SqlConnection conn = new SqlConnection(connString);
+        //        SqlCommand cmd = new SqlCommand(query, conn);
+        //        conn.Open();
+
+        //        // create data adapter
+        //        SqlDataAdapter da = new SqlDataAdapter(cmd);
+        //        // this will query your database and return the result to your datatable
+        //        da.Fill(dataTable);
+        //        conn.Close();
+        //        da.Dispose();
+        //    }
+        //}
+
+
     }
 }
+   
+    
+

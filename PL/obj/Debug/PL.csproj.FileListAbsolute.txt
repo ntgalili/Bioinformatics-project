@@ -70,3 +70,6 @@ C:\dotNet5781_XX_8113_5037\ntgalili\Bioinformatics-project\PL\obj\Debug\PL.cspro
 C:\dotNet5781_XX_8113_5037\ntgalili\Bioinformatics-project\PL\obj\Debug\PL.csproj.CopyComplete
 C:\dotNet5781_XX_8113_5037\ntgalili\Bioinformatics-project\PL\obj\Debug\PL.exe
 C:\dotNet5781_XX_8113_5037\ntgalili\Bioinformatics-project\PL\obj\Debug\PL.pdb
+C:\Users\הדסי\source\repos\Bioinformatics-project\PL\obj\Debug\ProteinsWindow.g.cs
+C:\Users\הדסי\source\repos\Bioinformatics-project\PL\obj\Debug\ProteinsWindow.baml
+C:\Users\הדסי\source\repos\Bioinformatics-project\PL\obj\Debug\App.baml

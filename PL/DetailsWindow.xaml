@@ -6,20 +6,20 @@
         xmlns:local="clr-namespace:PL"
         xmlns:BO="clr-namespace:BO;assembly=BL" x:Class="PL.DetailsWindow"
         mc:Ignorable="d"
-        Title="DetailsWindow" Height="1671.431" Width="808.065">
+        Title="DetailsWindow"  Height="413.831" Width="808.065" >
     <Grid>
 
-        <DataGrid x:Name="pentamerDataGrid" RowDetailsVisibilityMode="VisibleWhenSelected" Margin="85,119,89.6,100.6" ItemsSource="{Binding}" EnableRowVirtualization="True" AutoGenerateColumns="False">
+        <DataGrid x:Name="pentamerDataGrid" RowDetailsVisibilityMode="VisibleWhenSelected" Margin="85,100,66.6,50" ItemsSource="{Binding}" EnableRowVirtualization="True" AutoGenerateColumns="False" Foreground="#FFFF8000">
             <DataGrid.Columns>
                 <DataGridTextColumn x:Name="firstIndexColumn" Width="SizeToHeader" Header="First Index" Binding="{Binding FirstIndex}"/>
                 <DataGridTextColumn x:Name="lastIndexColumn" Width="SizeToHeader" Header="Last Index" Binding="{Binding LastIndex}"/>
-                <DataGridTextColumn x:Name="proteinGIColumn" Width="SizeToHeader" Header="Protein GI" Binding="{Binding ProteinGI}"/>
-                <DataGridTextColumn x:Name="proteinNameColumn" Width="SizeToHeader" Header="Protein Name" Binding="{Binding ProteinName}"/>
-                <DataGridTextColumn x:Name="sequenceColumn" Width="SizeToHeader" Header="Sequence" Binding="{Binding Sequence}"/>
+                <DataGridTextColumn x:Name="proteinGIColumn" Width="*" Header="Protein GI" Binding="{Binding ProteinGI}"/>
+                <DataGridTextColumn x:Name="proteinNameColumn" Width="*" Header="Protein Name" Binding="{Binding ProteinName}"/>
+                <DataGridTextColumn x:Name="sequenceColumn" Width="*" Header="Sequence" Binding="{Binding Sequence}"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Label Content="The Sequence:" HorizontalAlignment="Left" Margin="135,39,0,0" VerticalAlignment="Top" Height="26" Width="120"/>
-        <Label HorizontalAlignment="Left" Margin="285,39,0,0" VerticalAlignment="Top" Height="26" Width="248"/>
+        <Label Content="The Sequence:" HorizontalAlignment="Left" Margin="135,39,0,0" VerticalAlignment="Top" Height="41" Width="150" FontWeight="Bold" Foreground="#FF0EA974"/>
+        <Label x:Name="seqLable" HorizontalAlignment="Left" Margin="308,39,0,0" VerticalAlignment="Top" Height="41" Width="309"/>
 
     </Grid>
 </Window>

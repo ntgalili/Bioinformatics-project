@@ -81,11 +81,11 @@ namespace DL
             else //if the Adjacent Stations not found
                 throw new BadProteinException(name, "Not found");
         }
-        public DO.Protein GetProteinByGI(int numOfGI)
+        public DO.Protein GetProteinByGI(string numOfGI)
         {
             XElement ListProteins = XMLTool.LoadListFromXMLElement(ListProteinsPath);
             XElement protein = (from s in ListProteins.Elements()    //find Adjacent Stations with this stations in the collection of Adjacent Stations
-                                where int.Parse(s.Element("ProteinGI").Value) == numOfGI
+                                where (s.Element("ProteinGI").Value) == numOfGI
                                 select s).FirstOrDefault();
 
             if (protein != null) //if the Adjacent Stations is found

@@ -32,12 +32,12 @@ namespace PL
             //richTextBox1.SelectionBackColor = Color.Yellow;
             foreach (BO.Pentamer pentamer in SemiUnique)
             {
-                Colorize(pentamer.FirstIndex, pentamer.Sequence.Length, Colors.Blue);
+                Colorize(pentamer.FirstIndex, pentamer.Sequence.Length, Colors.DarkTurquoise);
                 
             }
             foreach (BO.Pentamer pentamer in Unique)
             {
-                Colorize(pentamer.FirstIndex, pentamer.Sequence.Length, Colors.Red);
+                Colorize(pentamer.FirstIndex, pentamer.Sequence.Length, Colors.Orange);
             }
             TextPointer GetPoint(TextPointer start, int x)
             {

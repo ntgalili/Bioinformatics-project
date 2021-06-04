@@ -38,5 +38,11 @@ namespace PL
             searchWindow win = new searchWindow(bl);
             win.ShowDialog();
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            ProteinsWindow proteinsWindow = new ProteinsWindow();
+            proteinsWindow.ShowDialog();
+        }
     }
 }
