@@ -9,10 +9,10 @@
         Title="VirtualSequenceWindow" Height="505.8" Width="826.4" >
     <Grid>
 
-        <DataGrid x:Name="virtualSequenceDataGrid" RowDetailsVisibilityMode="VisibleWhenSelected" Margin="80,136,69,67.6" ItemsSource="{Binding}" EnableRowVirtualization="True" AutoGenerateColumns="False" SelectionChanged="virtualSequenceDataGrid_SelectionChanged" FontSize="16" FontWeight="Bold">
+        <DataGrid x:Name="virtualSequenceDataGrid" RowDetailsVisibilityMode="VisibleWhenSelected" Margin="80,136,69,67.6" ItemsSource="{Binding}" EnableRowVirtualization="True" AutoGenerateColumns="False" SelectionChanged="virtualSequenceDataGrid_SelectionChanged" FontSize="16" FontWeight="Bold" Foreground="#FF0EA974" HorizontalGridLinesBrush="White" VerticalGridLinesBrush="White" IsReadOnly="True">
             <DataGrid.Columns>
-                <DataGridTextColumn x:Name="sequenceColumn" Width="SizeToHeader" Header="Sequence" Binding="{Binding Sequence}"/>
-                <DataGridTextColumn x:Name="countColumn" Width="SizeToHeader" Header="count" Binding="{Binding count}"/>
+                <DataGridTextColumn x:Name="sequenceColumn" Width="*" Header="Sequence" Binding="{Binding Sequence}"/>
+                <DataGridTextColumn x:Name="countColumn" Width="*" Header="count" Binding="{Binding count}"/>
 
                 <DataGridTemplateColumn>
                     <DataGridTemplateColumn.CellTemplate>
@@ -24,8 +24,8 @@
 
             </DataGrid.Columns>
         </DataGrid>
-        <ComboBox x:Name="cutComboBox" HorizontalAlignment="Left" Margin="396,57,0,0" VerticalAlignment="Top" Width="221" Height="37" SelectedItem="{Binding CuttingType}" SelectionChanged="ComboBox_SelectionChanged" FontSize="16"/>
-        <Label Content="How do you want to make the cut?" HorizontalAlignment="Left" Margin="80,60,0,0" VerticalAlignment="Top" Height="34" Width="297" FontWeight="Bold"/>
+        <ComboBox x:Name="cutComboBox" HorizontalAlignment="Left" Margin="396,57,0,0" VerticalAlignment="Top" Width="221" Height="37" SelectedItem="{Binding CuttingType}" SelectionChanged="ComboBox_SelectionChanged" FontSize="16" Foreground="#FF0EA974"/>
+        <Label Content="How do you want to make the cut?" HorizontalAlignment="Left" Margin="80,60,0,0" VerticalAlignment="Top" Height="34" Width="297" FontWeight="Bold" Foreground="#FFFF8000"/>
 
     </Grid>
 </Window>
