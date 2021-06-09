@@ -15,14 +15,19 @@ namespace BLAPI
         #region Pentamer
         BO.UniquenessTest search(BO.Pentamer pnta);
         IEnumerable<BO.Pentamer> GetPentamersBySequence(string S);
-        //IEnumerable<BO.Pentamer> cutting(string str);
-        IEnumerable<BO.Pentamer> GetAllPentamer();
         IEnumerable<BO.Pentamer> GetPentamerByProteinGI(string ProteinGI);
         IEnumerable<BO.Pentamer> GetPentamerByProteinName(string ProteinName);
-        BO.Pentamer GetPentamerBySequence(string Sequence);
-        void AddPentamer(BO.Pentamer pentamer);
-        void DeletePentamer(string proteinGI, string sequence, int firstIndex);
-        IEnumerable<BO.Pentamer> Search(BO.Pentamer pntaDO);
+
+
+
+
+
+        // BO.Pentamer GetPentamerBySequence(string Sequence);
+        // void AddPentamer(BO.Pentamer pentamer);
+        //  void DeletePentamer(string proteinGI, string sequence, int firstIndex);
+        // IEnumerable<BO.Pentamer> Search(BO.Pentamer pntaDO);
+        //IEnumerable<BO.Pentamer> cutting(string str);
+        //IEnumerable<BO.Pentamer> GetAllPentamer();
         #endregion
 
 
@@ -30,15 +35,15 @@ namespace BLAPI
         BO.Protein GetProteinBySequence(string str);
         BO.Protein GetProteinByName(string name);
         BO.Protein GetProteinByGI(string numOfGI);
-        BO.Protein GetProtein(string ProteinGI, string ProteinName);
-        void AddProtein(BO.Protein protein);
-        void DeleteProtein(string ProteinGI, string ProteinName);
-        IEnumerable<BO.Protein> GetALLProtein();
+       
+        //void AddProtein(BO.Protein protein);
+        //void DeleteProtein(string ProteinGI, string ProteinName);
+        //IEnumerable<BO.Protein> GetALLProtein();
         #endregion
 
 
         #region VirtualSequence
-        IEnumerable<BO.VirtualSequence> GetAllVirtualSequences();
+        BO.VirtualSequence GetVirtualSequence(string Sequence);
         #endregion
     }
 }

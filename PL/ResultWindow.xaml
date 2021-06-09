@@ -6,13 +6,18 @@
         xmlns:local="clr-namespace:PL"
         xmlns:BO="clr-namespace:BO;assembly=BL" x:Class="PL.ResultWindow"
         mc:Ignorable="d"
-        Title="ResultWindow" Height="673.648" Width="1218.605" >
+        Title="ResultWindow" Height="844.048" Width="1218.605" >
 
     <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="277*"/>
+            <RowDefinition Height="251*"/>
+            <RowDefinition Height="286*"/>
+        </Grid.RowDefinitions>
         <Label Content="Result" HorizontalAlignment="Left" Margin="52,21,0,0" VerticalAlignment="Top" Height="43" Width="253" Foreground="#FF0EA974" FontWeight="Bold" FontSize="20"/>
-        <RichTextBox x:Name="seqtextBox" HorizontalAlignment="Left" Height="130" Margin="52,66,0,0"  VerticalAlignment="Top" Width="1097" IsReadOnly="True" FontSize="16" />
+        <RichTextBox x:Name="seqtextBox" HorizontalAlignment="Stretch" Height="201" Margin="10,66,10,0"  VerticalAlignment="Top" IsReadOnly="True" FontSize="16" />
 
-        <DataGrid x:Name="UniqueDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Margin="113,220,113,250" RowDetailsVisibilityMode="VisibleWhenSelected" FontSize="16" IsReadOnly="True" Foreground="Orange">
+        <DataGrid x:Name="UniqueDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Margin="113,11.2,113,13" RowDetailsVisibilityMode="VisibleWhenSelected" FontSize="16" IsReadOnly="True" Foreground="Orange" Grid.Row="1">
             <DataGrid.Columns>
                 <DataGridTextColumn x:Name="sequenceColumn" Binding="{Binding Sequence}" Header="Sequence" Width="SizeToHeader" MinWidth="100"/>
                 <DataGridTextColumn x:Name="firstIndexColumn" Binding="{Binding FirstIndex}" Header="First Index" Width="SizeToHeader" MinWidth="100"/>
@@ -22,14 +27,14 @@
 
             </DataGrid.Columns>
         </DataGrid>
-        <DataGrid x:Name="SemiUniqueDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Margin="113,423,113,40" RowDetailsVisibilityMode="VisibleWhenSelected" FontSize="16" IsReadOnly="True" Foreground="DarkTurquoise">
+        <DataGrid x:Name="SemiUniqueDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Margin="113,16,113,40.4" RowDetailsVisibilityMode="VisibleWhenSelected" FontSize="16" IsReadOnly="True" Foreground="DarkTurquoise" Grid.Row="2">
             <DataGrid.Columns>
                 <DataGridTextColumn x:Name="sequenceColumn1" Binding="{Binding Sequence}" Header="Sequence" MinWidth="100" Width="SizeToHeader"/>
                 <DataGridTextColumn x:Name="firstIndexColumn1" Binding="{Binding FirstIndex}" Header="First Index" Width="SizeToHeader" MinWidth="100"/>
                 <DataGridTextColumn x:Name="lastIndexColumn1" Binding="{Binding LastIndex}" Header="Last Index" Width="SizeToHeader" MinWidth="100"/>
                 <DataGridTextColumn x:Name="proteinGIColumn1" Binding="{Binding ProteinGI}" Header="Protein GI" Width="SizeToHeader" MinWidth="100"/>
                 <DataGridTextColumn x:Name="proteinNameColumn1" Binding="{Binding ProteinName}" Header="Protein Name"  Width="SizeToHeader" MinWidth="100" FontSize="16"/>
-              
+
             </DataGrid.Columns>
         </DataGrid>
 
